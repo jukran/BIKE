@@ -1,0 +1,313 @@
+model{
+#-------------
+# Concentration code
+# concentration measurements data
+for(k in 1:nexactK[ 1 , 1 ]){
+logcK[ 1 , 1 ,k] ~ dnorm(mucK[ 1 , 1 ],taucK[ 1 , 1 ])
+}
+for(k in 1:nexactK[ 1 , 2 ]){
+logcK[ 1 , 2 ,k] ~ dnorm(mucK[ 1 , 2 ],taucK[ 1 , 2 ])
+}
+for(k in 1:nexactK[ 1 , 3 ]){
+logcK[ 1 , 3 ,k] ~ dnorm(mucK[ 1 , 3 ],taucK[ 1 , 3 ])
+}
+for(k in 1:nexactK[ 1 , 4 ]){
+logcK[ 1 , 4 ,k] ~ dnorm(mucK[ 1 , 4 ],taucK[ 1 , 4 ])
+}
+for(k in 1:nexactK[ 1 , 5 ]){
+logcK[ 1 , 5 ,k] ~ dnorm(mucK[ 1 , 5 ],taucK[ 1 , 5 ])
+}
+for(k in 1:nexactK[ 2 , 1 ]){
+logcK[ 2 , 1 ,k] ~ dnorm(mucK[ 2 , 1 ],taucK[ 2 , 1 ])
+}
+for(k in 1:nexactK[ 2 , 2 ]){
+logcK[ 2 , 2 ,k] ~ dnorm(mucK[ 2 , 2 ],taucK[ 2 , 2 ])
+}
+for(k in 1:nexactK[ 2 , 3 ]){
+logcK[ 2 , 3 ,k] ~ dnorm(mucK[ 2 , 3 ],taucK[ 2 , 3 ])
+}
+for(k in 1:nexactK[ 2 , 4 ]){
+logcK[ 2 , 4 ,k] ~ dnorm(mucK[ 2 , 4 ],taucK[ 2 , 4 ])
+}
+for(k in 1:nexactK[ 2 , 5 ]){
+logcK[ 2 , 5 ,k] ~ dnorm(mucK[ 2 , 5 ],taucK[ 2 , 5 ])
+}
+for(k in 1:nexactM[ 1 , 1 ]){
+logcM[ 1 , 1 ,k] ~ dnorm(mucM[ 1 , 1 ],taucM[ 1 , 1 ])
+positive1M[ 1 , 1 ,k] ~ dbern(pM[ 1 , 1 ])
+positive1M[ 1 , 1 ,k] <- 1
+}
+for(k in 1:nexactM[ 1 , 2 ]){
+logcM[ 1 , 2 ,k] ~ dnorm(mucM[ 1 , 2 ],taucM[ 1 , 2 ])
+}
+for(k in 1:nexactM[ 1 , 3 ]){
+logcM[ 1 , 3 ,k] ~ dnorm(mucM[ 1 , 3 ],taucM[ 1 , 3 ])
+}
+for(k in 1:nexactM[ 1 , 4 ]){
+logcM[ 1 , 4 ,k] ~ dnorm(mucM[ 1 , 4 ],taucM[ 1 , 4 ])
+}
+for(k in 1:nexactM[ 1 , 5 ]){
+logcM[ 1 , 5 ,k] ~ dnorm(mucM[ 1 , 5 ],taucM[ 1 , 5 ])
+}
+for(k in 1:nexactM[ 2 , 1 ]){
+logcM[ 2 , 1 ,k] ~ dnorm(mucM[ 2 , 1 ],taucM[ 2 , 1 ])
+}
+for(k in 1:nexactM[ 2 , 2 ]){
+logcM[ 2 , 2 ,k] ~ dnorm(mucM[ 2 , 2 ],taucM[ 2 , 2 ])
+positive1M[ 2 , 2 ,k] ~ dbern(pM[ 2 , 2 ])
+positive1M[ 2 , 2 ,k] <- 1
+}
+for(k in 1:nexactM[ 2 , 3 ]){
+logcM[ 2 , 3 ,k] ~ dnorm(mucM[ 2 , 3 ],taucM[ 2 , 3 ])
+positive1M[ 2 , 3 ,k] ~ dbern(pM[ 2 , 3 ])
+positive1M[ 2 , 3 ,k] <- 1
+}
+for(k in 1:nexactM[ 2 , 4 ]){
+logcM[ 2 , 4 ,k] ~ dnorm(mucM[ 2 , 4 ],taucM[ 2 , 4 ])
+}
+for(k in 1:nexactM[ 2 , 5 ]){
+logcM[ 2 , 5 ,k] ~ dnorm(mucM[ 2 , 5 ],taucM[ 2 , 5 ])
+}
+# Censored data
+for(k in 1:nbelowLOQK[ 1 , 1 ]){
+positive2K[ 1 , 1 ,k] ~ dbern(PRintervalK[ 1 , 1 ,k])
+PRintervalK[ 1 , 1 ,k]<-(phi((logLOQK[ 1 , 1 ,k]-mucK[ 1 , 1 ])*pow(taucK[ 1 , 1 ],0.5))-phi((logLOQLimK[ 1 , 1 ,k]-mucK[ 1 , 1 ])*pow(taucK[ 1 , 1 ],0.5)))
+positive2K[ 1 , 1 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 1 , 2 ]){
+positive2K[ 1 , 2 ,k] ~ dbern(PRintervalK[ 1 , 2 ,k])
+PRintervalK[ 1 , 2 ,k]<-(phi((logLOQK[ 1 , 2 ,k]-mucK[ 1 , 2 ])*pow(taucK[ 1 , 2 ],0.5))-phi((logLOQLimK[ 1 , 2 ,k]-mucK[ 1 , 2 ])*pow(taucK[ 1 , 2 ],0.5)))
+positive2K[ 1 , 2 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 1 , 3 ]){
+positive2K[ 1 , 3 ,k] ~ dbern(PRintervalK[ 1 , 3 ,k])
+PRintervalK[ 1 , 3 ,k]<-(phi((logLOQK[ 1 , 3 ,k]-mucK[ 1 , 3 ])*pow(taucK[ 1 , 3 ],0.5))-phi((logLOQLimK[ 1 , 3 ,k]-mucK[ 1 , 3 ])*pow(taucK[ 1 , 3 ],0.5)))
+positive2K[ 1 , 3 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 1 , 4 ]){
+positive2K[ 1 , 4 ,k] ~ dbern(PRintervalK[ 1 , 4 ,k])
+PRintervalK[ 1 , 4 ,k]<-(phi((logLOQK[ 1 , 4 ,k]-mucK[ 1 , 4 ])*pow(taucK[ 1 , 4 ],0.5))-phi((logLOQLimK[ 1 , 4 ,k]-mucK[ 1 , 4 ])*pow(taucK[ 1 , 4 ],0.5)))
+positive2K[ 1 , 4 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 1 , 5 ]){
+positive2K[ 1 , 5 ,k] ~ dbern(PRintervalK[ 1 , 5 ,k])
+PRintervalK[ 1 , 5 ,k]<-(phi((logLOQK[ 1 , 5 ,k]-mucK[ 1 , 5 ])*pow(taucK[ 1 , 5 ],0.5))-phi((logLOQLimK[ 1 , 5 ,k]-mucK[ 1 , 5 ])*pow(taucK[ 1 , 5 ],0.5)))
+positive2K[ 1 , 5 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 2 , 1 ]){
+positive2K[ 2 , 1 ,k] ~ dbern(PRintervalK[ 2 , 1 ,k])
+PRintervalK[ 2 , 1 ,k]<-(phi((logLOQK[ 2 , 1 ,k]-mucK[ 2 , 1 ])*pow(taucK[ 2 , 1 ],0.5))-phi((logLOQLimK[ 2 , 1 ,k]-mucK[ 2 , 1 ])*pow(taucK[ 2 , 1 ],0.5)))
+positive2K[ 2 , 1 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 2 , 2 ]){
+positive2K[ 2 , 2 ,k] ~ dbern(PRintervalK[ 2 , 2 ,k])
+PRintervalK[ 2 , 2 ,k]<-(phi((logLOQK[ 2 , 2 ,k]-mucK[ 2 , 2 ])*pow(taucK[ 2 , 2 ],0.5))-phi((logLOQLimK[ 2 , 2 ,k]-mucK[ 2 , 2 ])*pow(taucK[ 2 , 2 ],0.5)))
+positive2K[ 2 , 2 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 2 , 3 ]){
+positive2K[ 2 , 3 ,k] ~ dbern(PRintervalK[ 2 , 3 ,k])
+PRintervalK[ 2 , 3 ,k]<-(phi((logLOQK[ 2 , 3 ,k]-mucK[ 2 , 3 ])*pow(taucK[ 2 , 3 ],0.5))-phi((logLOQLimK[ 2 , 3 ,k]-mucK[ 2 , 3 ])*pow(taucK[ 2 , 3 ],0.5)))
+positive2K[ 2 , 3 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 2 , 4 ]){
+positive2K[ 2 , 4 ,k] ~ dbern(PRintervalK[ 2 , 4 ,k])
+PRintervalK[ 2 , 4 ,k]<-(phi((logLOQK[ 2 , 4 ,k]-mucK[ 2 , 4 ])*pow(taucK[ 2 , 4 ],0.5))-phi((logLOQLimK[ 2 , 4 ,k]-mucK[ 2 , 4 ])*pow(taucK[ 2 , 4 ],0.5)))
+positive2K[ 2 , 4 ,k] <- 1
+}
+for(k in 1:nbelowLOQK[ 2 , 5 ]){
+positive2K[ 2 , 5 ,k] ~ dbern(PRintervalK[ 2 , 5 ,k])
+PRintervalK[ 2 , 5 ,k]<-(phi((logLOQK[ 2 , 5 ,k]-mucK[ 2 , 5 ])*pow(taucK[ 2 , 5 ],0.5))-phi((logLOQLimK[ 2 , 5 ,k]-mucK[ 2 , 5 ])*pow(taucK[ 2 , 5 ],0.5)))
+positive2K[ 2 , 5 ,k] <- 1
+}
+for(k in 1:nbelowLODK[ 1 , 1 ]){
+positive3K[ 1 , 1 ,k] ~ dbern(PRleftK[ 1 , 1 ,k])
+PRleftK[ 1 , 1 ,k]<- phi((logLODK[ 1 , 1 ,k]-mucK[ 1 , 1 ])*pow(taucK[ 1 , 1 ],0.5))
+positive3K[ 1 , 1 ,k] <- 1
+}
+for(k in 1:nbelowLODK[ 1 , 2 ]){
+positive3K[ 1 , 2 ,k] ~ dbern(PRleftK[ 1 , 2 ,k])
+PRleftK[ 1 , 2 ,k]<- phi((logLODK[ 1 , 2 ,k]-mucK[ 1 , 2 ])*pow(taucK[ 1 , 2 ],0.5))
+positive3K[ 1 , 2 ,k] <- 1
+}
+for(k in 1:nbelowLODK[ 1 , 3 ]){
+positive3K[ 1 , 3 ,k] ~ dbern(PRleftK[ 1 , 3 ,k])
+PRleftK[ 1 , 3 ,k]<- phi((logLODK[ 1 , 3 ,k]-mucK[ 1 , 3 ])*pow(taucK[ 1 , 3 ],0.5))
+positive3K[ 1 , 3 ,k] <- 1
+}
+for(k in 1:nbelowLODK[ 1 , 4 ]){
+positive3K[ 1 , 4 ,k] ~ dbern(PRleftK[ 1 , 4 ,k])
+PRleftK[ 1 , 4 ,k]<- phi((logLODK[ 1 , 4 ,k]-mucK[ 1 , 4 ])*pow(taucK[ 1 , 4 ],0.5))
+positive3K[ 1 , 4 ,k] <- 1
+}
+for(k in 1:nbelowLODK[ 2 , 1 ]){
+positive3K[ 2 , 1 ,k] ~ dbern(PRleftK[ 2 , 1 ,k])
+PRleftK[ 2 , 1 ,k]<- phi((logLODK[ 2 , 1 ,k]-mucK[ 2 , 1 ])*pow(taucK[ 2 , 1 ],0.5))
+positive3K[ 2 , 1 ,k] <- 1
+}
+for(k in 1:nbelowLODK[ 2 , 2 ]){
+positive3K[ 2 , 2 ,k] ~ dbern(PRleftK[ 2 , 2 ,k])
+PRleftK[ 2 , 2 ,k]<- phi((logLODK[ 2 , 2 ,k]-mucK[ 2 , 2 ])*pow(taucK[ 2 , 2 ],0.5))
+positive3K[ 2 , 2 ,k] <- 1
+}
+for(k in 1:nbelowLODK[ 2 , 4 ]){
+positive3K[ 2 , 4 ,k] ~ dbern(PRleftK[ 2 , 4 ,k])
+PRleftK[ 2 , 4 ,k]<- phi((logLODK[ 2 , 4 ,k]-mucK[ 2 , 4 ])*pow(taucK[ 2 , 4 ],0.5))
+positive3K[ 2 , 4 ,k] <- 1
+}
+for(k in 1:nbelowLOQM[ 2 , 1 ]){
+positive2M[ 2 , 1 ,k] ~ dbern(PRintervalM[ 2 , 1 ,k])
+PRintervalM[ 2 , 1 ,k]<-(phi((logLOQM[ 2 , 1 ,k]-mucM[ 2 , 1 ])*pow(taucM[ 2 , 1 ],0.5))-phi((logLOQLimM[ 2 , 1 ,k]-mucM[ 2 , 1 ])*pow(taucM[ 2 , 1 ],0.5)))
+positive2M[ 2 , 1 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 1 , 1 ]){
+positive3M[ 1 , 1 ,k] ~ dbern(PRleftM[ 1 , 1 ,k])
+PRleftM[ 1 , 1 ,k]<- 1-pM[ 1 , 1 ]*(1-phi((logLODM[ 1 , 1 ,k]-mucM[ 1 , 1 ])*pow(taucM[ 1 , 1 ],0.5)))
+positive3M[ 1 , 1 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 1 , 3 ]){
+positive3M[ 1 , 3 ,k] ~ dbern(PRleftM[ 1 , 3 ,k])
+PRleftM[ 1 , 3 ,k]<- phi((logLODM[ 1 , 3 ,k]-mucM[ 1 , 3 ])*pow(taucM[ 1 , 3 ],0.5))
+positive3M[ 1 , 3 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 1 , 4 ]){
+positive3M[ 1 , 4 ,k] ~ dbern(PRleftM[ 1 , 4 ,k])
+PRleftM[ 1 , 4 ,k]<- phi((logLODM[ 1 , 4 ,k]-mucM[ 1 , 4 ])*pow(taucM[ 1 , 4 ],0.5))
+positive3M[ 1 , 4 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 1 , 5 ]){
+positive3M[ 1 , 5 ,k] ~ dbern(PRleftM[ 1 , 5 ,k])
+PRleftM[ 1 , 5 ,k]<- phi((logLODM[ 1 , 5 ,k]-mucM[ 1 , 5 ])*pow(taucM[ 1 , 5 ],0.5))
+positive3M[ 1 , 5 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 2 , 1 ]){
+positive3M[ 2 , 1 ,k] ~ dbern(PRleftM[ 2 , 1 ,k])
+PRleftM[ 2 , 1 ,k]<- phi((logLODM[ 2 , 1 ,k]-mucM[ 2 , 1 ])*pow(taucM[ 2 , 1 ],0.5))
+positive3M[ 2 , 1 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 2 , 2 ]){
+positive3M[ 2 , 2 ,k] ~ dbern(PRleftM[ 2 , 2 ,k])
+PRleftM[ 2 , 2 ,k]<- 1-pM[ 2 , 2 ]*(1-phi((logLODM[ 2 , 2 ,k]-mucM[ 2 , 2 ])*pow(taucM[ 2 , 2 ],0.5)))
+positive3M[ 2 , 2 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 2 , 3 ]){
+positive3M[ 2 , 3 ,k] ~ dbern(PRleftM[ 2 , 3 ,k])
+PRleftM[ 2 , 3 ,k]<- 1-pM[ 2 , 3 ]*(1-phi((logLODM[ 2 , 3 ,k]-mucM[ 2 , 3 ])*pow(taucM[ 2 , 3 ],0.5)))
+positive3M[ 2 , 3 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 2 , 4 ]){
+positive3M[ 2 , 4 ,k] ~ dbern(PRleftM[ 2 , 4 ,k])
+PRleftM[ 2 , 4 ,k]<- phi((logLODM[ 2 , 4 ,k]-mucM[ 2 , 4 ])*pow(taucM[ 2 , 4 ],0.5))
+positive3M[ 2 , 4 ,k] <- 1
+}
+for(k in 1:nbelowLODM[ 2 , 5 ]){
+positive3M[ 2 , 5 ,k] ~ dbern(PRleftM[ 2 , 5 ,k])
+PRleftM[ 2 , 5 ,k]<- phi((logLODM[ 2 , 5 ,k]-mucM[ 2 , 5 ])*pow(taucM[ 2 , 5 ],0.5))
+positive3M[ 2 , 5 ,k] <- 1
+}
+# Priors:
+for(i in 1:nhK){
+for(j in 1:nf){
+mucK[i,j] ~ dunif(-10,10)
+taucK[i,j] ~ dgamma(0.01,0.01)
+sigcK[i,j] <- sqrt(1/taucK[i,j])
+}}
+pK[ 1 , 1 ] ~ dbeta( 1001 , 1 )
+pK[ 1 , 2 ] ~ dbeta( 1001 , 1 )
+pK[ 1 , 3 ] ~ dbeta( 1001 , 1 )
+pK[ 1 , 4 ] ~ dbeta( 1001 , 1 )
+pK[ 1 , 5 ] ~ dbeta( 1001 , 1 )
+pK[ 2 , 1 ] ~ dbeta( 1001 , 1 )
+pK[ 2 , 2 ] ~ dbeta( 1001 , 1 )
+pK[ 2 , 3 ] ~ dbeta( 1001 , 1 )
+pK[ 2 , 4 ] ~ dbeta( 1001 , 1 )
+pK[ 2 , 5 ] ~ dbeta( 1001 , 1 )
+# Priors:
+for(i in 1:nhM){
+for(j in 1:nf){
+mucM[i,j] ~ dunif(-10,10)
+taucM[i,j] ~ dgamma(0.01,0.01)
+sigcM[i,j] <- sqrt(1/taucM[i,j])
+}}
+pM[ 1 , 1 ] ~ dbeta(1,1)
+pM[ 1 , 2 ] ~ dbeta( 5 , 3722 )
+pM[ 1 , 3 ] ~ dbeta( 7 , 2081 )
+pM[ 1 , 4 ] ~ dbeta( 30 , 9672 )
+pM[ 1 , 5 ] ~ dbeta( 7 , 1855 )
+pM[ 2 , 1 ] ~ dbeta( 77 , 533 )
+pM[ 2 , 2 ] ~ dbeta(1,1)
+pM[ 2 , 3 ] ~ dbeta(1,1)
+pM[ 2 , 4 ] ~ dbeta( 12 , 2700 )
+pM[ 2 , 5 ] ~ dbeta( 4 , 1808 )
+#-----------------
+# Consumption code
+# Body weight model:
+for(r in 1:nr){ logWeight[r] ~ dnorm(muw,tauw); logWeight[r] <- log(Weight[r]) }
+muw ~ dunif(-10,10)
+tauw ~ dgamma(0.01,0.01)
+sigw <- sqrt(1/tauw)
+  
+  
+# Consumption measurements data (daily amounts)
+for(r in 1:nr){ # individual respondent
+for(t in 1:nd){ # day
+# non-consumption days are here as 'NA' so that this
+# distribution for what the consumption would be if it was positive:
+logsw[r,t,1:nf] ~ dmnorm(mus[r,1:nf],Ts[1:nf,1:nf])
+}
+# Individual consumption means are correlated among food types
+# with a population (overall) mean and correlation matrix over food types:
+mus[r,1:nf] ~ dmnorm(mus0[1:nf],Ts0[1:nf,1:nf])
+}
+# Priors for food consumption amounts in general:
+for(j in 1:nf){ 
+mus0[j] ~ dunif(-10,10)
+sigs[j] <- sqrt(Ss[j,j])
+}
+# Correlations between food type means:
+Ts0[1:nf,1:nf] ~ dwish(DI[1:nf,1:nf],nf2); nf2<-nf+2
+Ts[1:nf,1:nf] ~ dwish(DI[1:nf,1:nf],nf2)
+Ss0[1:nf,1:nf] <- inverse(Ts0[1:nf,1:nf])
+Ss[1:nf,1:nf] <- inverse(Ts[1:nf,1:nf])
+# evaluate correlation matrix between food type amounts: 
+#for(ii in 1:nf){  
+#for(jj in 1:nf){ 
+#CORlogs0[ii,jj] <- (Ss0[ii,jj])/((sqrt(Ss0[ii,ii]))*(sqrt(Ss0[jj,jj])))
+#CORlogs[ii,jj] <- (Ss[ii,jj])/((sqrt(Ss[ii,ii]))*(sqrt(Ss[jj,jj])))
+#}}
+# Consumption frequencies data (daily yes/no)
+for(r in 1:nr){
+# Individual consumption probabilities correlated among foods (if many foods):
+for(j in 1:nf){
+logitp[r,j] <- logitp0[j]
+}
+for(j in 1:nf){
+for(t in 1:nd){
+usedays[r,j,t] ~ dbern(p[r,j,t])
+# Probability to consume (individual r, food j):
+p[r,j,t] <-  exp(logitp[r,j])/(1+exp(logitp[r,j])) 
+}}}
+# Prior for consumption probabilities:
+tp0<-1/2.71
+for(j in 1:nf){
+logitp0[j] ~ dnorm(0,tp0)
+}
+#Tp simulated from prior but not used if no between-user variability
+Tp[1:nf,1:nf] ~ dwish(DI[1:nf,1:nf],nf2)
+# For optional outputs: evaluate correlation matrix between food type frequencies
+#Sp[1:nf,1:nf] <- inverse(Tp[1:nf,1:nf])
+#for(ii in 1:nf){  
+#for(jj in 1:nf){  
+#CORlogitp[ii,jj] <- (Sp[ii,jj])/((sqrt(Sp[ii,ii]))*(sqrt(Sp[jj,jj])))
+#}}
+for(i in 1:nf){for(j in 1:nf){ DI[i,j]<-equals(i,j) }}
+#--------------------------------
+# Consumption frequencies
+for(j in 1:nf){
+# Individual consumption probabilities:
+ppred[j] <- exp(logitppred[j])/(1+exp(logitppred[j]))   
+}
+# Individual consumption logit-probabilities:
+for(j in 1:nf){
+logitppred[j] <- logitp0[j]
+}
+}

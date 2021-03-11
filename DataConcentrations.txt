@@ -1,0 +1,906 @@
+Samplenum	Food	Type	Country	Year	Hazard	Concentration	LOQ	LOD	Unit	LOQtrue	LODtrue	DummyC	DummyCobs	DummyLOQobs	DummyLODobs	trueprev
+1	poultry	broiler	EU	2020	campylobacter	0.757	0.500	0.500	cfu.p.gram	0.5	0.5	0.757	0.757	0.500	0.500	1
+2	poultry	broiler	EU	2020	campylobacter	NA	NA	0.500	cfu.p.gram	0.5	0.5	0.088	NA	NA	0.500	1
+3	poultry	broiler	EU	2020	campylobacter	NA	NA	0.500	cfu.p.gram	0.5	0.5	0.169	NA	NA	0.500	1
+4	poultry	broiler	EU	2020	campylobacter	0.629	0.500	0.500	cfu.p.gram	0.5	0.5	0.629	0.629	0.500	0.500	1
+5	poultry	broiler	EU	2020	campylobacter	NA	NA	0.500	cfu.p.gram	0.5	0.5	0.159	NA	NA	0.500	1
+6	poultry	broiler	EU	2020	campylobacter	25.769	0.500	0.500	cfu.p.gram	0.5	0.5	25.769	25.769	0.500	0.500	1
+7	poultry	broiler	EU	2020	campylobacter	5.641	0.500	0.500	cfu.p.gram	0.5	0.5	5.641	5.641	0.500	0.500	1
+8	poultry	broiler	EU	2020	campylobacter	0.796	0.500	0.500	cfu.p.gram	0.5	0.5	0.796	0.796	0.500	0.500	1
+9	poultry	broiler	EU	2020	campylobacter	NA	0.9	0.500	cfu.p.gram	0.5	0.5	0.254	NA	NA	0.500	1
+10	poultry	broiler	EU	2020	campylobacter	NA	0.9	0.500	cfu.p.gram	0.5	0.5	0.173	NA	NA	0.500	1
+11	poultry	broiler	EU	2020	campylobacter	NA	NA	0.500	cfu.p.gram	0.5	0.5	0.377	NA	NA	0.500	1
+12	poultry	broiler	EU	2020	campylobacter	NA	NA	0.500	cfu.p.gram	0.5	0.5	0.156	NA	NA	0.500	1
+13	poultry	broiler	EU	2020	campylobacter	NA	NA	0.500	cfu.p.gram	0.5	0.5	0.461	NA	NA	0.500	1
+14	poultry	broiler	EU	2020	campylobacter	1.732	0.500	0.500	cfu.p.gram	0.5	0.5	1.732	1.732	0.500	0.500	1
+15	poultry	broiler	EU	2020	campylobacter	NA	NA	0.500	cfu.p.gram	0.5	0.5	0.153	NA	NA	0.500	1
+16	poultry	broiler	EU	2020	campylobacter	NA	NA	0.500	cfu.p.gram	0.5	0.5	0.152	NA	NA	0.500	1
+17	poultry	broiler	EU	2020	campylobacter	1.146	0.500	0.500	cfu.p.gram	0.5	0.5	1.146	1.146	0.500	0.500	1
+18	fruitvege	vege	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.012	NA	NA	0.020	1
+19	fruitvege	vege	EU	2020	campylobacter	0.022	0.020	0.020	cfu.p.gram	0.02	0.02	0.022	0.022	0.020	0.020	1
+20	fruitvege	vege	EU	2020	campylobacter	0.068	0.020	0.020	cfu.p.gram	0.02	0.02	0.068	0.068	0.020	0.020	1
+21	fruitvege	vege	EU	2020	campylobacter	0.476	0.020	0.020	cfu.p.gram	0.02	0.02	0.476	0.476	0.020	0.020	1
+22	fruitvege	vege	EU	2020	campylobacter	0.600	0.020	0.020	cfu.p.gram	0.02	0.02	0.600	0.600	0.020	0.020	1
+23	fruitvege	vege	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.014	NA	NA	0.020	1
+24	fruitvege	vege	EU	2020	campylobacter	0.776	0.020	0.020	cfu.p.gram	0.02	0.02	0.776	0.776	0.020	0.020	1
+25	fruitvege	vege	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.003	NA	NA	0.020	1
+26	fruitvege	vege	EU	2020	campylobacter	0.035	0.020	0.020	cfu.p.gram	0.02	0.02	0.035	0.035	0.020	0.020	1
+27	fruitvege	vege	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.016	NA	NA	0.020	1
+28	fruitvege	vege	EU	2020	campylobacter	0.053	0.020	0.020	cfu.p.gram	0.02	0.02	0.053	0.053	0.020	0.020	1
+29	fruitvege	vege	EU	2020	campylobacter	0.041	0.020	0.020	cfu.p.gram	0.02	0.02	0.041	0.041	0.020	0.020	1
+30	fruitvege	vege	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.014	NA	NA	0.020	1
+31	fruitvege	vege	EU	2020	campylobacter	0.790	0.020	0.020	cfu.p.gram	0.02	0.02	0.790	0.790	0.020	0.020	1
+32	fruitvege	vege	EU	2020	campylobacter	0.031	0.020	0.020	cfu.p.gram	0.02	0.02	0.031	0.031	0.020	0.020	1
+33	fruitvege	vege	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.004	NA	NA	0.020	1
+34	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+35	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.016	NA	NA	0.020	0.3
+36	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+37	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.011	NA	NA	0.020	0.3
+38	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+39	seafood	fish	EU	2020	campylobacter	0.052	0.020	0.020	cfu.p.gram	0.02	0.02	0.052	0.052	0.020	0.020	0.3
+40	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+41	seafood	fish	EU	2020	campylobacter	0.034	0.020	0.020	cfu.p.gram	0.02	0.02	0.034	0.034	0.020	0.020	0.3
+42	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+43	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+44	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.016	NA	NA	0.020	0.3
+45	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+46	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+47	seafood	fish	EU	2020	campylobacter	0.024	0.020	0.020	cfu.p.gram	0.02	0.02	0.024	0.024	0.020	0.020	0.3
+48	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+49	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.019	NA	NA	0.020	0.3
+50	seafood	fish	EU	2020	campylobacter	0.056	0.020	0.020	cfu.p.gram	0.02	0.02	0.056	0.056	0.020	0.020	0.3
+51	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+52	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+53	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+54	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+55	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+56	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+57	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+58	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.006	NA	NA	0.020	0.3
+59	seafood	fish	EU	2020	campylobacter	0.026	0.020	0.020	cfu.p.gram	0.02	0.02	0.026	0.026	0.020	0.020	0.3
+60	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+61	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+62	seafood	fish	EU	2020	campylobacter	0.098	0.020	0.020	cfu.p.gram	0.02	0.02	0.098	0.098	0.020	0.020	0.3
+63	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+64	seafood	fish	EU	2020	campylobacter	0.028	0.020	0.020	cfu.p.gram	0.02	0.02	0.028	0.028	0.020	0.020	0.3
+65	seafood	fish	EU	2020	campylobacter	0.022	0.020	0.020	cfu.p.gram	0.02	0.02	0.022	0.022	0.020	0.020	0.3
+66	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+67	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+68	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+69	seafood	fish	EU	2020	campylobacter	0.073	0.020	0.020	cfu.p.gram	0.02	0.02	0.073	0.073	0.020	0.020	0.3
+70	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+71	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.015	NA	NA	0.020	0.3
+72	seafood	fish	EU	2020	campylobacter	0.025	0.020	0.020	cfu.p.gram	0.02	0.02	0.025	0.025	0.020	0.020	0.3
+73	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+74	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+75	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+76	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+77	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+78	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+79	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+80	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+81	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.015	NA	NA	0.020	0.3
+82	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.014	NA	NA	0.020	0.3
+83	seafood	fish	EU	2020	campylobacter	0.039	0.020	0.020	cfu.p.gram	0.02	0.02	0.039	0.039	0.020	0.020	0.3
+84	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+85	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.015	NA	NA	0.020	0.3
+86	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+87	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+88	seafood	fish	EU	2020	campylobacter	0.024	0.020	0.020	cfu.p.gram	0.02	0.02	0.024	0.024	0.020	0.020	0.3
+89	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.008	NA	NA	0.020	0.3
+90	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+91	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+92	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.015	NA	NA	0.020	0.3
+93	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+94	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+95	seafood	fish	EU	2020	campylobacter	0.032	0.020	0.020	cfu.p.gram	0.02	0.02	0.032	0.032	0.020	0.020	0.3
+96	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+97	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+98	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+99	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+100	seafood	fish	EU	2020	campylobacter	0.029	0.020	0.020	cfu.p.gram	0.02	0.02	0.029	0.029	0.020	0.020	0.3
+101	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+102	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+103	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.009	NA	NA	0.020	0.3
+104	seafood	fish	EU	2020	campylobacter	0.033	0.020	0.020	cfu.p.gram	0.02	0.02	0.033	0.033	0.020	0.020	0.3
+105	seafood	fish	EU	2020	campylobacter	0.026	0.020	0.020	cfu.p.gram	0.02	0.02	0.026	0.026	0.020	0.020	0.3
+106	seafood	fish	EU	2020	campylobacter	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.000	NA	NA	0.020	0.3
+107	milkproducts	milk	EU	2020	campylobacter	0.199	0.010	0.010	cfu.p.gram	0.01	0.01	0.199	0.199	0.010	0.010	1
+108	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.004	NA	NA	0.010	1
+109	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.003	NA	NA	0.010	1
+110	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.001	NA	NA	0.010	1
+111	milkproducts	milk	EU	2020	campylobacter	0.217	0.010	0.010	cfu.p.gram	0.01	0.01	0.217	0.217	0.010	0.010	1
+112	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.008	NA	NA	0.010	1
+113	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.008	NA	NA	0.010	1
+114	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.004	NA	NA	0.010	1
+115	milkproducts	milk	EU	2020	campylobacter	0.029	0.010	0.010	cfu.p.gram	0.01	0.01	0.029	0.029	0.010	0.010	1
+116	milkproducts	milk	EU	2020	campylobacter	0.024	0.010	0.010	cfu.p.gram	0.01	0.01	0.024	0.024	0.010	0.010	1
+117	milkproducts	milk	EU	2020	campylobacter	2.008	0.010	0.010	cfu.p.gram	0.01	0.01	2.008	2.008	0.010	0.010	1
+118	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.003	NA	NA	0.010	1
+119	milkproducts	milk	EU	2020	campylobacter	0.059	0.010	0.010	cfu.p.gram	0.01	0.01	0.059	0.059	0.010	0.010	1
+120	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.010	NA	NA	0.010	1
+121	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.007	NA	NA	0.010	1
+122	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.003	NA	NA	0.010	1
+123	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.001	NA	NA	0.010	1
+124	milkproducts	milk	EU	2020	campylobacter	0.307	0.010	0.010	cfu.p.gram	0.01	0.01	0.307	0.307	0.010	0.010	1
+125	milkproducts	milk	EU	2020	campylobacter	0.017	0.010	0.010	cfu.p.gram	0.01	0.01	0.017	0.017	0.010	0.010	1
+126	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.008	NA	NA	0.010	1
+127	milkproducts	milk	EU	2020	campylobacter	0.044	0.010	0.010	cfu.p.gram	0.01	0.01	0.044	0.044	0.010	0.010	1
+128	milkproducts	milk	EU	2020	campylobacter	0.265	0.010	0.010	cfu.p.gram	0.01	0.01	0.265	0.265	0.010	0.010	1
+129	milkproducts	milk	EU	2020	campylobacter	0.424	0.010	0.010	cfu.p.gram	0.01	0.01	0.424	0.424	0.010	0.010	1
+130	milkproducts	milk	EU	2020	campylobacter	0.023	0.010	0.010	cfu.p.gram	0.01	0.01	0.023	0.023	0.010	0.010	1
+131	milkproducts	milk	EU	2020	campylobacter	0.021	0.010	0.010	cfu.p.gram	0.01	0.01	0.021	0.021	0.010	0.010	1
+132	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.002	NA	NA	0.010	1
+133	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.002	NA	NA	0.010	1
+134	milkproducts	milk	EU	2020	campylobacter	0.025	0.010	0.010	cfu.p.gram	0.01	0.01	0.025	0.025	0.010	0.010	1
+135	milkproducts	milk	EU	2020	campylobacter	0.012	0.010	0.010	cfu.p.gram	0.01	0.01	0.012	0.012	0.010	0.010	1
+136	milkproducts	milk	EU	2020	campylobacter	0.162	0.010	0.010	cfu.p.gram	0.01	0.01	0.162	0.162	0.010	0.010	1
+137	milkproducts	milk	EU	2020	campylobacter	0.095	0.010	0.010	cfu.p.gram	0.01	0.01	0.095	0.095	0.010	0.010	1
+138	milkproducts	milk	EU	2020	campylobacter	0.076	0.010	0.010	cfu.p.gram	0.01	0.01	0.076	0.076	0.010	0.010	1
+139	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.002	NA	NA	0.010	1
+140	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.003	NA	NA	0.010	1
+141	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.007	NA	NA	0.010	1
+142	milkproducts	milk	EU	2020	campylobacter	0.291	0.010	0.010	cfu.p.gram	0.01	0.01	0.291	0.291	0.010	0.010	1
+143	milkproducts	milk	EU	2020	campylobacter	0.013	0.010	0.010	cfu.p.gram	0.01	0.01	0.013	0.013	0.010	0.010	1
+144	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.005	NA	NA	0.010	1
+145	milkproducts	milk	EU	2020	campylobacter	0.072	0.010	0.010	cfu.p.gram	0.01	0.01	0.072	0.072	0.010	0.010	1
+146	milkproducts	milk	EU	2020	campylobacter	0.054	0.010	0.010	cfu.p.gram	0.01	0.01	0.054	0.054	0.010	0.010	1
+147	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.000	NA	NA	0.010	1
+148	milkproducts	milk	EU	2020	campylobacter	0.037	0.010	0.010	cfu.p.gram	0.01	0.01	0.037	0.037	0.010	0.010	1
+149	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.004	NA	NA	0.010	1
+150	milkproducts	milk	EU	2020	campylobacter	0.049	0.010	0.010	cfu.p.gram	0.01	0.01	0.049	0.049	0.010	0.010	1
+151	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.006	NA	NA	0.010	1
+152	milkproducts	milk	EU	2020	campylobacter	0.021	0.010	0.010	cfu.p.gram	0.01	0.01	0.021	0.021	0.010	0.010	1
+153	milkproducts	milk	EU	2020	campylobacter	0.013	0.010	0.010	cfu.p.gram	0.01	0.01	0.013	0.013	0.010	0.010	1
+154	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.009	NA	NA	0.010	1
+155	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.006	NA	NA	0.010	1
+156	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.001	NA	NA	0.010	1
+157	milkproducts	milk	EU	2020	campylobacter	0.011	0.010	0.010	cfu.p.gram	0.01	0.01	0.011	0.011	0.010	0.010	1
+158	milkproducts	milk	EU	2020	campylobacter	0.013	0.010	0.010	cfu.p.gram	0.01	0.01	0.013	0.013	0.010	0.010	1
+159	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.010	NA	NA	0.010	1
+160	milkproducts	milk	EU	2020	campylobacter	0.112	0.010	0.010	cfu.p.gram	0.01	0.01	0.112	0.112	0.010	0.010	1
+161	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.003	NA	NA	0.010	1
+162	milkproducts	milk	EU	2020	campylobacter	0.010	0.010	0.010	cfu.p.gram	0.01	0.01	0.010	0.010	0.010	0.010	1
+163	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.005	NA	NA	0.010	1
+164	milkproducts	milk	EU	2020	campylobacter	0.015	0.010	0.010	cfu.p.gram	0.01	0.01	0.015	0.015	0.010	0.010	1
+165	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.001	NA	NA	0.010	1
+166	milkproducts	milk	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.002	NA	NA	0.010	1
+167	eggproducts	egg	EU	2020	campylobacter	0.017	0.010	0.010	cfu.p.gram	0.01	0.01	0.017	0.017	0.010	0.010	1
+168	eggproducts	egg	EU	2020	campylobacter	0.011	0.010	0.010	cfu.p.gram	0.01	0.01	0.011	0.011	0.010	0.010	1
+169	eggproducts	egg	EU	2020	campylobacter	0.200	0.010	0.010	cfu.p.gram	0.01	0.01	0.200	0.200	0.010	0.010	1
+170	eggproducts	egg	EU	2020	campylobacter	0.039	0.010	0.010	cfu.p.gram	0.01	0.01	0.039	0.039	0.010	0.010	1
+171	eggproducts	egg	EU	2020	campylobacter	0.032	0.010	0.010	cfu.p.gram	0.01	0.01	0.032	0.032	0.010	0.010	1
+172	eggproducts	egg	EU	2020	campylobacter	0.016	0.010	0.010	cfu.p.gram	0.01	0.01	0.016	0.016	0.010	0.010	1
+173	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.010	NA	NA	0.010	1
+174	eggproducts	egg	EU	2020	campylobacter	0.089	0.010	0.010	cfu.p.gram	0.01	0.01	0.089	0.089	0.010	0.010	1
+175	eggproducts	egg	EU	2020	campylobacter	0.027	0.010	0.010	cfu.p.gram	0.01	0.01	0.027	0.027	0.010	0.010	1
+176	eggproducts	egg	EU	2020	campylobacter	0.148	0.010	0.010	cfu.p.gram	0.01	0.01	0.148	0.148	0.010	0.010	1
+177	eggproducts	egg	EU	2020	campylobacter	0.250	0.010	0.010	cfu.p.gram	0.01	0.01	0.250	0.250	0.010	0.010	1
+178	eggproducts	egg	EU	2020	campylobacter	0.520	0.010	0.010	cfu.p.gram	0.01	0.01	0.520	0.520	0.010	0.010	1
+179	eggproducts	egg	EU	2020	campylobacter	0.018	0.010	0.010	cfu.p.gram	0.01	0.01	0.018	0.018	0.010	0.010	1
+180	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.008	NA	NA	0.010	1
+181	eggproducts	egg	EU	2020	campylobacter	0.043	0.010	0.010	cfu.p.gram	0.01	0.01	0.043	0.043	0.010	0.010	1
+182	eggproducts	egg	EU	2020	campylobacter	0.117	0.010	0.010	cfu.p.gram	0.01	0.01	0.117	0.117	0.010	0.010	1
+183	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.005	NA	NA	0.010	1
+184	eggproducts	egg	EU	2020	campylobacter	0.033	0.010	0.010	cfu.p.gram	0.01	0.01	0.033	0.033	0.010	0.010	1
+185	eggproducts	egg	EU	2020	campylobacter	0.110	0.010	0.010	cfu.p.gram	0.01	0.01	0.110	0.110	0.010	0.010	1
+186	eggproducts	egg	EU	2020	campylobacter	0.033	0.010	0.010	cfu.p.gram	0.01	0.01	0.033	0.033	0.010	0.010	1
+187	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.004	NA	NA	0.010	1
+188	eggproducts	egg	EU	2020	campylobacter	0.053	0.010	0.010	cfu.p.gram	0.01	0.01	0.053	0.053	0.010	0.010	1
+189	eggproducts	egg	EU	2020	campylobacter	0.455	0.010	0.010	cfu.p.gram	0.01	0.01	0.455	0.455	0.010	0.010	1
+190	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.010	NA	NA	0.010	1
+191	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.003	NA	NA	0.010	1
+192	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.004	NA	NA	0.010	1
+193	eggproducts	egg	EU	2020	campylobacter	0.045	0.010	0.010	cfu.p.gram	0.01	0.01	0.045	0.045	0.010	0.010	1
+194	eggproducts	egg	EU	2020	campylobacter	0.194	0.010	0.010	cfu.p.gram	0.01	0.01	0.194	0.194	0.010	0.010	1
+195	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.008	NA	NA	0.010	1
+196	eggproducts	egg	EU	2020	campylobacter	0.069	0.010	0.010	cfu.p.gram	0.01	0.01	0.069	0.069	0.010	0.010	1
+197	eggproducts	egg	EU	2020	campylobacter	0.048	0.010	0.010	cfu.p.gram	0.01	0.01	0.048	0.048	0.010	0.010	1
+198	eggproducts	egg	EU	2020	campylobacter	0.022	0.010	0.010	cfu.p.gram	0.01	0.01	0.022	0.022	0.010	0.010	1
+199	eggproducts	egg	EU	2020	campylobacter	0.162	0.010	0.010	cfu.p.gram	0.01	0.01	0.162	0.162	0.010	0.010	1
+200	eggproducts	egg	EU	2020	campylobacter	0.078	0.010	0.010	cfu.p.gram	0.01	0.01	0.078	0.078	0.010	0.010	1
+201	eggproducts	egg	EU	2020	campylobacter	0.516	0.010	0.010	cfu.p.gram	0.01	0.01	0.516	0.516	0.010	0.010	1
+202	eggproducts	egg	EU	2020	campylobacter	0.013	0.010	0.010	cfu.p.gram	0.01	0.01	0.013	0.013	0.010	0.010	1
+203	eggproducts	egg	EU	2020	campylobacter	0.093	0.010	0.010	cfu.p.gram	0.01	0.01	0.093	0.093	0.010	0.010	1
+204	eggproducts	egg	EU	2020	campylobacter	0.077	0.010	0.010	cfu.p.gram	0.01	0.01	0.077	0.077	0.010	0.010	1
+205	eggproducts	egg	EU	2020	campylobacter	1.231	0.010	0.010	cfu.p.gram	0.01	0.01	1.231	1.231	0.010	0.010	1
+206	eggproducts	egg	EU	2020	campylobacter	0.024	0.010	0.010	cfu.p.gram	0.01	0.01	0.024	0.024	0.010	0.010	1
+207	eggproducts	egg	EU	2020	campylobacter	0.410	0.010	0.010	cfu.p.gram	0.01	0.01	0.410	0.410	0.010	0.010	1
+208	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.005	NA	NA	0.010	1
+209	eggproducts	egg	EU	2020	campylobacter	0.104	0.010	0.010	cfu.p.gram	0.01	0.01	0.104	0.104	0.010	0.010	1
+210	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.009	NA	NA	0.010	1
+211	eggproducts	egg	EU	2020	campylobacter	0.024	0.010	0.010	cfu.p.gram	0.01	0.01	0.024	0.024	0.010	0.010	1
+212	eggproducts	egg	EU	2020	campylobacter	0.045	0.010	0.010	cfu.p.gram	0.01	0.01	0.045	0.045	0.010	0.010	1
+213	eggproducts	egg	EU	2020	campylobacter	0.848	0.010	0.010	cfu.p.gram	0.01	0.01	0.848	0.848	0.010	0.010	1
+214	eggproducts	egg	EU	2020	campylobacter	0.017	0.010	0.010	cfu.p.gram	0.01	0.01	0.017	0.017	0.010	0.010	1
+215	eggproducts	egg	EU	2020	campylobacter	0.011	0.010	0.010	cfu.p.gram	0.01	0.01	0.011	0.011	0.010	0.010	1
+216	eggproducts	egg	EU	2020	campylobacter	0.035	0.010	0.010	cfu.p.gram	0.01	0.01	0.035	0.035	0.010	0.010	1
+217	eggproducts	egg	EU	2020	campylobacter	0.025	0.010	0.010	cfu.p.gram	0.01	0.01	0.025	0.025	0.010	0.010	1
+218	eggproducts	egg	EU	2020	campylobacter	0.172	0.010	0.010	cfu.p.gram	0.01	0.01	0.172	0.172	0.010	0.010	1
+219	eggproducts	egg	EU	2020	campylobacter	0.045	0.010	0.010	cfu.p.gram	0.01	0.01	0.045	0.045	0.010	0.010	1
+220	eggproducts	egg	EU	2020	campylobacter	0.025	0.010	0.010	cfu.p.gram	0.01	0.01	0.025	0.025	0.010	0.010	1
+221	eggproducts	egg	EU	2020	campylobacter	0.406	0.010	0.010	cfu.p.gram	0.01	0.01	0.406	0.406	0.010	0.010	1
+222	eggproducts	egg	EU	2020	campylobacter	0.161	0.010	0.010	cfu.p.gram	0.01	0.01	0.161	0.161	0.010	0.010	1
+223	eggproducts	egg	EU	2020	campylobacter	0.288	0.010	0.010	cfu.p.gram	0.01	0.01	0.288	0.288	0.010	0.010	1
+224	eggproducts	egg	EU	2020	campylobacter	0.082	0.010	0.010	cfu.p.gram	0.01	0.01	0.082	0.082	0.010	0.010	1
+225	eggproducts	egg	EU	2020	campylobacter	NA	NA	0.010	cfu.p.gram	0.01	0.01	0.005	NA	NA	0.010	1
+226	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+227	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+228	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+229	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+230	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+231	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.001	NA	NA	0.055	0.45
+232	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+233	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+234	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+235	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+236	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+237	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+238	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+239	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+240	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+241	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+242	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+243	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+244	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+245	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+246	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+247	poultry	broiler	EU	2020	salmonella	0.169	0.055	0.055	cfu.p.gram	0.054945055	0.054945055	0.169	0.169	0.055	0.055	0.45
+248	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+249	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+250	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+251	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.050	NA	NA	0.055	0.45
+252	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.015	NA	NA	0.055	0.45
+253	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+254	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+255	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+256	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+257	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.001	NA	NA	0.055	0.45
+258	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+259	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+260	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+261	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+262	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+263	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.001	NA	NA	0.055	0.45
+264	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.002	NA	NA	0.055	0.45
+265	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.044	NA	NA	0.055	0.45
+266	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.026	NA	NA	0.055	0.45
+267	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+268	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+269	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+270	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.021	NA	NA	0.055	0.45
+271	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+272	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+273	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+274	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+275	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+276	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+277	poultry	broiler	EU	2020	salmonella	12.342	0.055	0.055	cfu.p.gram	0.054945055	0.054945055	12.342	12.342	0.055	0.055	0.45
+278	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+279	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.005	NA	NA	0.055	0.45
+280	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+281	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+282	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.004	NA	NA	0.055	0.45
+283	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+284	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+285	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.007	NA	NA	0.055	0.45
+286	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+287	poultry	broiler	EU	2020	salmonella	3.785	0.055	0.055	cfu.p.gram	0.054945055	0.054945055	3.785	3.785	0.055	0.055	0.45
+288	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.001	NA	NA	0.055	0.45
+289	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+290	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.001	NA	NA	0.055	0.45
+291	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+292	poultry	broiler	EU	2020	salmonella	26.379	0.055	0.055	cfu.p.gram	0.054945055	0.054945055	26.379	26.379	0.055	0.055	0.45
+293	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+294	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+295	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+296	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+297	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+298	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+299	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+300	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+301	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+302	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+303	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+304	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+305	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+306	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+307	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+308	poultry	broiler	EU	2020	salmonella	0.436	0.055	0.055	cfu.p.gram	0.054945055	0.054945055	0.436	0.436	0.055	0.055	0.45
+309	poultry	broiler	EU	2020	salmonella	2098.329	0.055	0.055	cfu.p.gram	0.054945055	0.054945055	2098.329	2098.329	0.055	0.055	0.45
+310	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.000	NA	NA	0.055	0.45
+311	poultry	broiler	EU	2020	salmonella	0.076	0.055	0.055	cfu.p.gram	0.054945055	0.054945055	0.076	0.076	0.055	0.055	0.45
+312	poultry	broiler	EU	2020	salmonella	NA	NA	0.055	cfu.p.gram	0.054945055	0.054945055	0.007	NA	NA	0.055	0.45
+313	fruitvege	vege	EU	2020	salmonella	0.036	0.020	0.020	cfu.p.gram	0.02	0.02	0.036	0.036	0.020	0.020	1
+314	fruitvege	vege	EU	2020	salmonella	0.191	0.020	0.020	cfu.p.gram	0.02	0.02	0.191	0.191	0.020	0.020	1
+315	fruitvege	vege	EU	2020	salmonella	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.007	NA	NA	0.020	1
+316	fruitvege	vege	EU	2020	salmonella	0.046	0.020	0.020	cfu.p.gram	0.02	0.02	0.046	0.046	0.020	0.020	1
+317	fruitvege	vege	EU	2020	salmonella	0.519	0.020	0.020	cfu.p.gram	0.02	0.02	0.519	0.519	0.020	0.020	1
+318	fruitvege	vege	EU	2020	salmonella	8.014	0.020	0.020	cfu.p.gram	0.02	0.02	8.014	8.014	0.020	0.020	1
+319	fruitvege	vege	EU	2020	salmonella	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.008	NA	NA	0.020	1
+320	fruitvege	vege	EU	2020	salmonella	0.024	0.020	0.020	cfu.p.gram	0.02	0.02	0.024	0.024	0.020	0.020	1
+321	fruitvege	vege	EU	2020	salmonella	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.014	NA	NA	0.020	1
+322	fruitvege	vege	EU	2020	salmonella	0.047	0.020	0.020	cfu.p.gram	0.02	0.02	0.047	0.047	0.020	0.020	1
+323	fruitvege	vege	EU	2020	salmonella	0.023	0.020	0.020	cfu.p.gram	0.02	0.02	0.023	0.023	0.020	0.020	1
+324	fruitvege	vege	EU	2020	salmonella	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.008	NA	NA	0.020	1
+325	fruitvege	vege	EU	2020	salmonella	0.096	0.020	0.020	cfu.p.gram	0.02	0.02	0.096	0.096	0.020	0.020	1
+326	fruitvege	vege	EU	2020	salmonella	7.511	0.020	0.020	cfu.p.gram	0.02	0.02	7.511	7.511	0.020	0.020	1
+327	fruitvege	vege	EU	2020	salmonella	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.011	NA	NA	0.020	1
+328	fruitvege	vege	EU	2020	salmonella	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.001	NA	NA	0.020	1
+329	fruitvege	vege	EU	2020	salmonella	0.599	0.020	0.020	cfu.p.gram	0.02	0.02	0.599	0.599	0.020	0.020	1
+330	fruitvege	vege	EU	2020	salmonella	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.007	NA	NA	0.020	1
+331	fruitvege	vege	EU	2020	salmonella	NA	NA	0.020	cfu.p.gram	0.02	0.02	0.013	NA	NA	0.020	1
+332	fruitvege	vege	EU	2020	salmonella	0.604	0.020	0.020	cfu.p.gram	0.02	0.02	0.604	0.604	0.020	0.020	1
+333	fruitvege	vege	EU	2020	salmonella	0.052	0.020	0.020	cfu.p.gram	0.02	0.02	0.052	0.052	0.020	0.020	1
+334	seafood	fish	EU	2020	salmonella	NA	NA	0.040	cfu.p.gram	0.04	0.04	0.013	NA	NA	0.040	1
+335	seafood	fish	EU	2020	salmonella	0.730	0.040	0.040	cfu.p.gram	0.04	0.04	0.730	0.730	0.040	0.040	1
+336	seafood	fish	EU	2020	salmonella	30.134	0.040	0.040	cfu.p.gram	0.04	0.04	30.134	30.134	0.040	0.040	1
+337	seafood	fish	EU	2020	salmonella	NA	NA	0.040	cfu.p.gram	0.04	0.04	0.000	NA	NA	0.040	1
+338	seafood	fish	EU	2020	salmonella	0.053	0.040	0.040	cfu.p.gram	0.04	0.04	0.053	0.053	0.040	0.040	1
+339	seafood	fish	EU	2020	salmonella	0.057	0.040	0.040	cfu.p.gram	0.04	0.04	0.057	0.057	0.040	0.040	1
+340	seafood	fish	EU	2020	salmonella	NA	NA	0.040	cfu.p.gram	0.04	0.04	0.005	NA	NA	0.040	1
+341	seafood	fish	EU	2020	salmonella	0.733	0.040	0.040	cfu.p.gram	0.04	0.04	0.733	0.733	0.040	0.040	1
+342	seafood	fish	EU	2020	salmonella	0.090	0.040	0.040	cfu.p.gram	0.04	0.04	0.090	0.090	0.040	0.040	1
+343	seafood	fish	EU	2020	salmonella	NA	NA	0.040	cfu.p.gram	0.04	0.04	0.005	NA	NA	0.040	1
+344	seafood	fish	EU	2020	salmonella	0.142	0.040	0.040	cfu.p.gram	0.04	0.04	0.142	0.142	0.040	0.040	1
+345	seafood	fish	EU	2020	salmonella	1.632	0.040	0.040	cfu.p.gram	0.04	0.04	1.632	1.632	0.040	0.040	1
+346	seafood	fish	EU	2020	salmonella	4.519	0.040	0.040	cfu.p.gram	0.04	0.04	4.519	4.519	0.040	0.040	1
+347	seafood	fish	EU	2020	salmonella	0.092	0.040	0.040	cfu.p.gram	0.04	0.04	0.092	0.092	0.040	0.040	1
+348	seafood	fish	EU	2020	salmonella	NA	NA	0.040	cfu.p.gram	0.04	0.04	0.004	NA	NA	0.040	1
+349	seafood	fish	EU	2020	salmonella	NA	NA	0.040	cfu.p.gram	0.04	0.04	0.006	NA	NA	0.040	1
+350	seafood	fish	EU	2020	salmonella	NA	NA	0.040	cfu.p.gram	0.04	0.04	0.027	NA	NA	0.040	1
+351	milkproducts	milk	EU	2020	salmonella	160.021	0.040	0.040	cfu.p.gram	0.04	0.04	160.021	160.021	0.040	0.040	1
+352	milkproducts	milk	EU	2020	salmonella	937.473	0.040	0.040	cfu.p.gram	0.04	0.04	937.473	937.473	0.040	0.040	1
+353	milkproducts	milk	EU	2020	salmonella	7166.718	0.040	0.040	cfu.p.gram	0.04	0.04	7166.718	7166.718	0.040	0.040	1
+354	milkproducts	milk	EU	2020	salmonella	104.278	0.040	0.040	cfu.p.gram	0.04	0.04	104.278	104.278	0.040	0.040	1
+355	milkproducts	milk	EU	2020	salmonella	96.841	0.040	0.040	cfu.p.gram	0.04	0.04	96.841	96.841	0.040	0.040	1
+356	milkproducts	milk	EU	2020	salmonella	1845.088	0.040	0.040	cfu.p.gram	0.04	0.04	1845.088	1845.088	0.040	0.040	1
+357	milkproducts	milk	EU	2020	salmonella	177.819	0.040	0.040	cfu.p.gram	0.04	0.04	177.819	177.819	0.040	0.040	1
+358	milkproducts	milk	EU	2020	salmonella	2.709	0.040	0.040	cfu.p.gram	0.04	0.04	2.709	2.709	0.040	0.040	1
+359	milkproducts	milk	EU	2020	salmonella	38.463	0.040	0.040	cfu.p.gram	0.04	0.04	38.463	38.463	0.040	0.040	1
+360	milkproducts	milk	EU	2020	salmonella	2756.228	0.040	0.040	cfu.p.gram	0.04	0.04	2756.228	2756.228	0.040	0.040	1
+361	milkproducts	milk	EU	2020	salmonella	57.628	0.040	0.040	cfu.p.gram	0.04	0.04	57.628	57.628	0.040	0.040	1
+362	milkproducts	milk	EU	2020	salmonella	1302.877	0.040	0.040	cfu.p.gram	0.04	0.04	1302.877	1302.877	0.040	0.040	1
+363	eggproducts	egg	EU	2020	salmonella	0.197	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.197	0.197	0.078	0.078	1
+364	eggproducts	egg	EU	2020	salmonella	35.660	0.078	0.078	cfu.p.gram	0.078125	0.078125	35.660	35.660	0.078	0.078	1
+365	eggproducts	egg	EU	2020	salmonella	0.416	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.416	0.416	0.078	0.078	1
+366	eggproducts	egg	EU	2020	salmonella	8.054	0.078	0.078	cfu.p.gram	0.078125	0.078125	8.054	8.054	0.078	0.078	1
+367	eggproducts	egg	EU	2020	salmonella	2.436	0.078	0.078	cfu.p.gram	0.078125	0.078125	2.436	2.436	0.078	0.078	1
+368	eggproducts	egg	EU	2020	salmonella	49.949	0.078	0.078	cfu.p.gram	0.078125	0.078125	49.949	49.949	0.078	0.078	1
+369	eggproducts	egg	EU	2020	salmonella	0.092	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.092	0.092	0.078	0.078	1
+370	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.000	NA	NA	0.078	1
+371	eggproducts	egg	EU	2020	salmonella	0.151	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.151	0.151	0.078	0.078	1
+372	eggproducts	egg	EU	2020	salmonella	87.852	0.078	0.078	cfu.p.gram	0.078125	0.078125	87.852	87.852	0.078	0.078	1
+373	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.005	NA	NA	0.078	1
+374	eggproducts	egg	EU	2020	salmonella	0.251	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.251	0.251	0.078	0.078	1
+375	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.025	NA	NA	0.078	1
+376	eggproducts	egg	EU	2020	salmonella	126.187	0.078	0.078	cfu.p.gram	0.078125	0.078125	126.187	126.187	0.078	0.078	1
+377	eggproducts	egg	EU	2020	salmonella	0.819	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.819	0.819	0.078	0.078	1
+378	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.040	NA	NA	0.078	1
+379	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.042	NA	NA	0.078	1
+380	eggproducts	egg	EU	2020	salmonella	0.281	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.281	0.281	0.078	0.078	1
+381	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.027	NA	NA	0.078	1
+382	eggproducts	egg	EU	2020	salmonella	0.245	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.245	0.245	0.078	0.078	1
+383	eggproducts	egg	EU	2020	salmonella	1.310	0.078	0.078	cfu.p.gram	0.078125	0.078125	1.310	1.310	0.078	0.078	1
+384	eggproducts	egg	EU	2020	salmonella	0.464	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.464	0.464	0.078	0.078	1
+385	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.007	NA	NA	0.078	1
+386	eggproducts	egg	EU	2020	salmonella	50.771	0.078	0.078	cfu.p.gram	0.078125	0.078125	50.771	50.771	0.078	0.078	1
+387	eggproducts	egg	EU	2020	salmonella	3.225	0.078	0.078	cfu.p.gram	0.078125	0.078125	3.225	3.225	0.078	0.078	1
+388	eggproducts	egg	EU	2020	salmonella	0.589	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.589	0.589	0.078	0.078	1
+389	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.045	NA	NA	0.078	1
+390	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.005	NA	NA	0.078	1
+391	eggproducts	egg	EU	2020	salmonella	47.960	0.078	0.078	cfu.p.gram	0.078125	0.078125	47.960	47.960	0.078	0.078	1
+392	eggproducts	egg	EU	2020	salmonella	71.552	0.078	0.078	cfu.p.gram	0.078125	0.078125	71.552	71.552	0.078	0.078	1
+393	eggproducts	egg	EU	2020	salmonella	1.687	0.078	0.078	cfu.p.gram	0.078125	0.078125	1.687	1.687	0.078	0.078	1
+394	eggproducts	egg	EU	2020	salmonella	1.423	0.078	0.078	cfu.p.gram	0.078125	0.078125	1.423	1.423	0.078	0.078	1
+395	eggproducts	egg	EU	2020	salmonella	8.523	0.078	0.078	cfu.p.gram	0.078125	0.078125	8.523	8.523	0.078	0.078	1
+396	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.001	NA	NA	0.078	1
+397	eggproducts	egg	EU	2020	salmonella	13.956	0.078	0.078	cfu.p.gram	0.078125	0.078125	13.956	13.956	0.078	0.078	1
+398	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.006	NA	NA	0.078	1
+399	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.073	NA	NA	0.078	1
+400	eggproducts	egg	EU	2020	salmonella	4.256	0.078	0.078	cfu.p.gram	0.078125	0.078125	4.256	4.256	0.078	0.078	1
+401	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.015	NA	NA	0.078	1
+402	eggproducts	egg	EU	2020	salmonella	0.137	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.137	0.137	0.078	0.078	1
+403	eggproducts	egg	EU	2020	salmonella	0.204	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.204	0.204	0.078	0.078	1
+404	eggproducts	egg	EU	2020	salmonella	NA	NA	0.078	cfu.p.gram	0.078125	0.078125	0.075	NA	NA	0.078	1
+405	eggproducts	egg	EU	2020	salmonella	0.356	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.356	0.356	0.078	0.078	1
+406	eggproducts	egg	EU	2020	salmonella	0.182	0.078	0.078	cfu.p.gram	0.078125	0.078125	0.182	0.182	0.078	0.078	1
+407	poultry	broiler	EU	2020	lead	0.015	0.010	0.005	microgram.p.gram	0.01	0.005	0.015	0.015	0.010	0.005	1
+408	poultry	broiler	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.004	NA	NA	0.005	1
+409	poultry	broiler	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.006	NA	0.010	0.005	1
+410	poultry	broiler	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.007	NA	0.010	0.005	1
+411	poultry	broiler	EU	2020	lead	0.016	0.010	0.005	microgram.p.gram	0.01	0.005	0.016	0.016	0.010	0.005	1
+412	poultry	broiler	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.003	NA	NA	0.005	1
+413	poultry	broiler	EU	2020	lead	0.014	0.010	0.005	microgram.p.gram	0.01	0.005	0.014	0.014	0.010	0.005	1
+414	poultry	broiler	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.008	NA	0.010	0.005	1
+415	poultry	broiler	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+416	poultry	broiler	EU	2020	lead	0.021	0.010	0.005	microgram.p.gram	0.01	0.005	0.021	0.021	0.010	0.005	1
+417	poultry	broiler	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.006	NA	0.010	0.005	1
+418	poultry	broiler	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.003	NA	NA	0.005	1
+419	fruitvege	vege	EU	2020	lead	0.023	0.010	0.005	microgram.p.gram	0.01	0.005	0.023	0.023	0.010	0.005	1
+420	fruitvege	vege	EU	2020	lead	0.013	0.010	0.005	microgram.p.gram	0.01	0.005	0.013	0.013	0.010	0.005	1
+421	fruitvege	vege	EU	2020	lead	0.043	0.010	0.005	microgram.p.gram	0.01	0.005	0.043	0.043	0.010	0.005	1
+422	fruitvege	vege	EU	2020	lead	0.072	0.010	0.005	microgram.p.gram	0.01	0.005	0.072	0.072	0.010	0.005	1
+423	fruitvege	vege	EU	2020	lead	0.224	0.010	0.005	microgram.p.gram	0.01	0.005	0.224	0.224	0.010	0.005	1
+424	fruitvege	vege	EU	2020	lead	0.021	0.010	0.005	microgram.p.gram	0.01	0.005	0.021	0.021	0.010	0.005	1
+425	fruitvege	vege	EU	2020	lead	0.025	0.010	0.005	microgram.p.gram	0.01	0.005	0.025	0.025	0.010	0.005	1
+426	fruitvege	vege	EU	2020	lead	0.107	0.010	0.005	microgram.p.gram	0.01	0.005	0.107	0.107	0.010	0.005	1
+427	fruitvege	vege	EU	2020	lead	0.014	0.010	0.005	microgram.p.gram	0.01	0.005	0.014	0.014	0.010	0.005	1
+428	fruitvege	vege	EU	2020	lead	0.038	0.010	0.005	microgram.p.gram	0.01	0.005	0.038	0.038	0.010	0.005	1
+429	fruitvege	vege	EU	2020	lead	0.030	0.010	0.005	microgram.p.gram	0.01	0.005	0.030	0.030	0.010	0.005	1
+430	fruitvege	vege	EU	2020	lead	0.017	0.010	0.005	microgram.p.gram	0.01	0.005	0.017	0.017	0.010	0.005	1
+431	fruitvege	vege	EU	2020	lead	0.040	0.010	0.005	microgram.p.gram	0.01	0.005	0.040	0.040	0.010	0.005	1
+432	fruitvege	vege	EU	2020	lead	0.055	0.010	0.005	microgram.p.gram	0.01	0.005	0.055	0.055	0.010	0.005	1
+433	fruitvege	vege	EU	2020	lead	0.071	0.010	0.005	microgram.p.gram	0.01	0.005	0.071	0.071	0.010	0.005	1
+434	fruitvege	vege	EU	2020	lead	0.066	0.010	0.005	microgram.p.gram	0.01	0.005	0.066	0.066	0.010	0.005	1
+435	fruitvege	vege	EU	2020	lead	0.034	0.010	0.005	microgram.p.gram	0.01	0.005	0.034	0.034	0.010	0.005	1
+436	fruitvege	vege	EU	2020	lead	0.033	0.010	0.005	microgram.p.gram	0.01	0.005	0.033	0.033	0.010	0.005	1
+437	fruitvege	vege	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.007	NA	0.010	0.005	1
+438	seafood	fish	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.004	NA	NA	0.005	1
+439	seafood	fish	EU	2020	lead	0.013	0.010	0.005	microgram.p.gram	0.01	0.005	0.013	0.013	0.010	0.005	1
+440	seafood	fish	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.004	NA	NA	0.005	1
+441	seafood	fish	EU	2020	lead	0.011	0.010	0.005	microgram.p.gram	0.01	0.005	0.011	0.011	0.010	0.005	1
+442	seafood	fish	EU	2020	lead	0.012	0.010	0.005	microgram.p.gram	0.01	0.005	0.012	0.012	0.010	0.005	1
+443	seafood	fish	EU	2020	lead	0.011	0.010	0.005	microgram.p.gram	0.01	0.005	0.011	0.011	0.010	0.005	1
+444	seafood	fish	EU	2020	lead	0.010	0.010	0.005	microgram.p.gram	0.01	0.005	0.010	0.010	0.010	0.005	1
+445	seafood	fish	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.003	NA	NA	0.005	1
+446	seafood	fish	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.004	NA	NA	0.005	1
+447	seafood	fish	EU	2020	lead	0.013	0.010	0.005	microgram.p.gram	0.01	0.005	0.013	0.013	0.010	0.005	1
+448	seafood	fish	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+449	seafood	fish	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.008	NA	0.010	0.005	1
+450	seafood	fish	EU	2020	lead	0.028	0.010	0.005	microgram.p.gram	0.01	0.005	0.028	0.028	0.010	0.005	1
+451	seafood	fish	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.004	NA	NA	0.005	1
+452	seafood	fish	EU	2020	lead	0.014	0.010	0.005	microgram.p.gram	0.01	0.005	0.014	0.014	0.010	0.005	1
+453	seafood	fish	EU	2020	lead	0.012	0.010	0.005	microgram.p.gram	0.01	0.005	0.012	0.012	0.010	0.005	1
+454	seafood	fish	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.007	NA	0.010	0.005	1
+455	seafood	fish	EU	2020	lead	0.011	0.010	0.005	microgram.p.gram	0.01	0.005	0.011	0.011	0.010	0.005	1
+456	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+457	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.003	NA	NA	0.005	1
+458	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.000	NA	NA	0.005	1
+459	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+460	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+461	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+462	milkproducts	milk	EU	2020	lead	0.011	0.010	0.005	microgram.p.gram	0.01	0.005	0.011	0.011	0.010	0.005	1
+463	milkproducts	milk	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.010	NA	0.010	0.005	1
+464	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+465	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+466	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.003	NA	NA	0.005	1
+467	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+468	milkproducts	milk	EU	2020	lead	0.064	0.010	0.005	microgram.p.gram	0.01	0.005	0.064	0.064	0.010	0.005	1
+469	milkproducts	milk	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.006	NA	0.010	0.005	1
+470	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+471	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.004	NA	NA	0.005	1
+472	milkproducts	milk	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.006	NA	0.010	0.005	1
+473	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.003	NA	NA	0.005	1
+474	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+475	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+476	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.000	NA	NA	0.005	1
+477	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.000	NA	NA	0.005	1
+478	milkproducts	milk	EU	2020	lead	0.012	0.010	0.005	microgram.p.gram	0.01	0.005	0.012	0.012	0.010	0.005	1
+479	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.000	NA	NA	0.005	1
+480	milkproducts	milk	EU	2020	lead	0.017	0.010	0.005	microgram.p.gram	0.01	0.005	0.017	0.017	0.010	0.005	1
+481	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.003	NA	NA	0.005	1
+482	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+483	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+484	milkproducts	milk	EU	2020	lead	0.010	0.010	0.005	microgram.p.gram	0.01	0.005	0.010	0.010	0.010	0.005	1
+485	milkproducts	milk	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.004	NA	NA	0.005	1
+486	milkproducts	milk	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.007	NA	0.010	0.005	1
+487	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+488	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+489	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+490	eggproducts	egg	EU	2020	lead	0.018	0.010	0.005	microgram.p.gram	0.01	0.005	0.018	0.018	0.010	0.005	1
+491	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+492	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.002	NA	NA	0.005	1
+493	eggproducts	egg	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.008	NA	0.010	0.005	1
+494	eggproducts	egg	EU	2020	lead	0.032	0.010	0.005	microgram.p.gram	0.01	0.005	0.032	0.032	0.010	0.005	1
+495	eggproducts	egg	EU	2020	lead	0.020	0.010	0.005	microgram.p.gram	0.01	0.005	0.020	0.020	0.010	0.005	1
+496	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+497	eggproducts	egg	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.006	NA	0.010	0.005	1
+498	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.003	NA	NA	0.005	1
+499	eggproducts	egg	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.009	NA	0.010	0.005	1
+500	eggproducts	egg	EU	2020	lead	NA	0.010	0.005	microgram.p.gram	0.01	0.005	0.006	NA	0.010	0.005	1
+501	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+502	eggproducts	egg	EU	2020	lead	NA	NA	0.005	microgram.p.gram	0.01	0.005	0.001	NA	NA	0.005	1
+503	eggproducts	egg	EU	2020	lead	0.012	0.010	0.005	microgram.p.gram	0.01	0.005	0.012	0.012	0.010	0.005	1
+504	poultry	broiler	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.002	NA	0.005	0.001	1
+505	poultry	broiler	EU	2020	cadmium	0.010	0.005	0.001	microgram.p.gram	0.005	0.001	0.010	0.010	0.005	0.001	1
+506	poultry	broiler	EU	2020	cadmium	0.006	0.005	0.001	microgram.p.gram	0.005	0.001	0.006	0.006	0.005	0.001	1
+507	poultry	broiler	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.005	0.001	0.001	NA	NA	0.001	1
+508	poultry	broiler	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.003	NA	0.005	0.001	1
+509	poultry	broiler	EU	2020	cadmium	0.009	0.005	0.001	microgram.p.gram	0.005	0.001	0.009	0.009	0.005	0.001	1
+510	poultry	broiler	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.003	NA	0.005	0.001	1
+511	poultry	broiler	EU	2020	cadmium	0.010	0.005	0.001	microgram.p.gram	0.005	0.001	0.010	0.010	0.005	0.001	1
+512	poultry	broiler	EU	2020	cadmium	0.009	0.005	0.001	microgram.p.gram	0.005	0.001	0.009	0.009	0.005	0.001	1
+513	poultry	broiler	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.002	NA	0.005	0.001	1
+514	poultry	broiler	EU	2020	cadmium	0.007	0.005	0.001	microgram.p.gram	0.005	0.001	0.007	0.007	0.005	0.001	1
+515	poultry	broiler	EU	2020	cadmium	0.007	0.005	0.001	microgram.p.gram	0.005	0.001	0.007	0.007	0.005	0.001	1
+516	poultry	broiler	EU	2020	cadmium	0.015	0.005	0.001	microgram.p.gram	0.005	0.001	0.015	0.015	0.005	0.001	1
+517	poultry	broiler	EU	2020	cadmium	0.009	0.005	0.001	microgram.p.gram	0.005	0.001	0.009	0.009	0.005	0.001	1
+518	poultry	broiler	EU	2020	cadmium	0.024	0.005	0.001	microgram.p.gram	0.005	0.001	0.024	0.024	0.005	0.001	1
+519	poultry	broiler	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.002	NA	0.005	0.001	1
+520	poultry	broiler	EU	2020	cadmium	0.006	0.005	0.001	microgram.p.gram	0.005	0.001	0.006	0.006	0.005	0.001	1
+521	fruitvege	vege	EU	2020	cadmium	0.070	0.005	0.001	microgram.p.gram	0.005	0.001	0.070	0.070	0.005	0.001	1
+522	fruitvege	vege	EU	2020	cadmium	0.028	0.005	0.001	microgram.p.gram	0.005	0.001	0.028	0.028	0.005	0.001	1
+523	fruitvege	vege	EU	2020	cadmium	0.032	0.005	0.001	microgram.p.gram	0.005	0.001	0.032	0.032	0.005	0.001	1
+524	fruitvege	vege	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.004	NA	0.005	0.001	1
+525	fruitvege	vege	EU	2020	cadmium	0.032	0.005	0.001	microgram.p.gram	0.005	0.001	0.032	0.032	0.005	0.001	1
+526	fruitvege	vege	EU	2020	cadmium	0.021	0.005	0.001	microgram.p.gram	0.005	0.001	0.021	0.021	0.005	0.001	1
+527	fruitvege	vege	EU	2020	cadmium	0.022	0.005	0.001	microgram.p.gram	0.005	0.001	0.022	0.022	0.005	0.001	1
+528	fruitvege	vege	EU	2020	cadmium	0.012	0.005	0.001	microgram.p.gram	0.005	0.001	0.012	0.012	0.005	0.001	1
+529	fruitvege	vege	EU	2020	cadmium	0.028	0.005	0.001	microgram.p.gram	0.005	0.001	0.028	0.028	0.005	0.001	1
+530	fruitvege	vege	EU	2020	cadmium	0.109	0.005	0.001	microgram.p.gram	0.005	0.001	0.109	0.109	0.005	0.001	1
+531	fruitvege	vege	EU	2020	cadmium	0.060	0.005	0.001	microgram.p.gram	0.005	0.001	0.060	0.060	0.005	0.001	1
+532	fruitvege	vege	EU	2020	cadmium	0.036	0.005	0.001	microgram.p.gram	0.005	0.001	0.036	0.036	0.005	0.001	1
+533	fruitvege	vege	EU	2020	cadmium	0.027	0.005	0.001	microgram.p.gram	0.005	0.001	0.027	0.027	0.005	0.001	1
+534	fruitvege	vege	EU	2020	cadmium	0.040	0.005	0.001	microgram.p.gram	0.005	0.001	0.040	0.040	0.005	0.001	1
+535	fruitvege	vege	EU	2020	cadmium	0.016	0.005	0.001	microgram.p.gram	0.005	0.001	0.016	0.016	0.005	0.001	1
+536	fruitvege	vege	EU	2020	cadmium	0.040	0.005	0.001	microgram.p.gram	0.005	0.001	0.040	0.040	0.005	0.001	1
+537	fruitvege	vege	EU	2020	cadmium	0.012	0.005	0.001	microgram.p.gram	0.005	0.001	0.012	0.012	0.005	0.001	1
+538	seafood	fish	EU	2020	cadmium	0.011	0.005	0.001	microgram.p.gram	0.005	0.001	0.011	0.011	0.005	0.001	1
+539	seafood	fish	EU	2020	cadmium	0.023	0.005	0.001	microgram.p.gram	0.005	0.001	0.023	0.023	0.005	0.001	1
+540	seafood	fish	EU	2020	cadmium	0.030	0.005	0.001	microgram.p.gram	0.005	0.001	0.030	0.030	0.005	0.001	1
+541	seafood	fish	EU	2020	cadmium	0.009	0.005	0.001	microgram.p.gram	0.005	0.001	0.009	0.009	0.005	0.001	1
+542	seafood	fish	EU	2020	cadmium	0.027	0.005	0.001	microgram.p.gram	0.005	0.001	0.027	0.027	0.005	0.001	1
+543	seafood	fish	EU	2020	cadmium	0.032	0.005	0.001	microgram.p.gram	0.005	0.001	0.032	0.032	0.005	0.001	1
+544	seafood	fish	EU	2020	cadmium	0.028	0.005	0.001	microgram.p.gram	0.005	0.001	0.028	0.028	0.005	0.001	1
+545	seafood	fish	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.005	NA	0.005	0.001	1
+546	seafood	fish	EU	2020	cadmium	0.030	0.005	0.001	microgram.p.gram	0.005	0.001	0.030	0.030	0.005	0.001	1
+547	seafood	fish	EU	2020	cadmium	0.007	0.005	0.001	microgram.p.gram	0.005	0.001	0.007	0.007	0.005	0.001	1
+548	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.001	NA	0.002	0.001	1
+549	milkproducts	milk	EU	2020	cadmium	0.003	0.002	0.001	microgram.p.gram	0.002	0.001	0.003	0.003	0.002	0.001	1
+550	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.001	NA	0.002	0.001	1
+551	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+552	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.001	NA	0.002	0.001	1
+553	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.001	NA	0.002	0.001	1
+554	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+555	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+556	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.001	NA	0.002	0.001	1
+557	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.002	NA	0.002	0.001	1
+558	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+559	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+560	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+561	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+562	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.002	NA	0.002	0.001	1
+563	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.002	NA	0.002	0.001	1
+564	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.002	NA	0.002	0.001	1
+565	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+566	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+567	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+568	milkproducts	milk	EU	2020	cadmium	0.002	0.002	0.001	microgram.p.gram	0.002	0.001	0.002	0.002	0.002	0.001	1
+569	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+570	milkproducts	milk	EU	2020	cadmium	0.003	0.002	0.001	microgram.p.gram	0.002	0.001	0.003	0.003	0.002	0.001	1
+571	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+572	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+573	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+574	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+575	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+576	milkproducts	milk	EU	2020	cadmium	0.002	0.002	0.001	microgram.p.gram	0.002	0.001	0.002	0.002	0.002	0.001	1
+577	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+578	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+579	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+580	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+581	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+582	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+583	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+584	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+585	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+586	milkproducts	milk	EU	2020	cadmium	0.004	0.002	0.001	microgram.p.gram	0.002	0.001	0.004	0.004	0.002	0.001	1
+587	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+588	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.001	NA	NA	0.001	1
+589	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.001	NA	0.002	0.001	1
+590	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+591	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.001	NA	0.002	0.001	1
+592	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.002	NA	0.002	0.001	1
+593	milkproducts	milk	EU	2020	cadmium	NA	0.002	0.001	microgram.p.gram	0.002	0.001	0.001	NA	0.002	0.001	1
+594	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+595	milkproducts	milk	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.002	0.001	0.000	NA	NA	0.001	1
+596	milkproducts	milk	EU	2020	cadmium	0.002	0.002	0.001	microgram.p.gram	0.002	0.001	0.002	0.002	0.002	0.001	1
+597	eggproducts	egg	EU	2020	cadmium	0.005	0.005	0.001	microgram.p.gram	0.005	0.001	0.005	0.005	0.005	0.001	1
+598	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.004	NA	0.005	0.001	1
+599	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.002	NA	0.005	0.001	1
+600	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.002	NA	0.005	0.001	1
+601	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.001	NA	0.005	0.001	1
+602	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.001	NA	0.005	0.001	1
+603	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.001	NA	0.005	0.001	1
+604	eggproducts	egg	EU	2020	cadmium	NA	NA	0.001	microgram.p.gram	0.005	0.001	0.001	NA	NA	0.001	1
+605	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.001	NA	0.005	0.001	1
+606	eggproducts	egg	EU	2020	cadmium	0.023	0.005	0.001	microgram.p.gram	0.005	0.001	0.023	0.023	0.005	0.001	1
+607	eggproducts	egg	EU	2020	cadmium	0.006	0.005	0.001	microgram.p.gram	0.005	0.001	0.006	0.006	0.005	0.001	1
+608	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.003	NA	0.005	0.001	1
+609	eggproducts	egg	EU	2020	cadmium	0.005	0.005	0.001	microgram.p.gram	0.005	0.001	0.005	0.005	0.005	0.001	1
+610	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.002	NA	0.005	0.001	1
+611	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.003	NA	0.005	0.001	1
+612	eggproducts	egg	EU	2020	cadmium	0.006	0.005	0.001	microgram.p.gram	0.005	0.001	0.006	0.006	0.005	0.001	1
+613	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.002	NA	0.005	0.001	1
+614	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.001	NA	0.005	0.001	1
+615	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.001	NA	0.005	0.001	1
+616	eggproducts	egg	EU	2020	cadmium	NA	0.005	0.001	microgram.p.gram	0.005	0.001	0.001	NA	0.005	0.001	1
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
+																
