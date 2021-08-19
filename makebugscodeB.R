@@ -235,7 +235,7 @@ cat("Ts0[1:nf,1:nf] ~ dwish(DI[1:nf,1:nf],nf2); nf2<-nf+2",file="bikemodel.txt",
 cat("Ts[1:nf,1:nf] ~ dwish(DI[1:nf,1:nf],nf2)",file="bikemodel.txt",sep="\n",append=TRUE)
 cat("Ss0[1:nf,1:nf] <- inverse(Ts0[1:nf,1:nf])",file="bikemodel.txt",sep="\n",append=TRUE)
 cat("Ss[1:nf,1:nf] <- inverse(Ts[1:nf,1:nf])",file="bikemodel.txt",sep="\n",append=TRUE)
-cat("# evaluate correlation matrix between food type amounts: ",file="bikemodel.txt",sep="\n",append=TRUE)
+cat("# Optional outputs: evaluate correlation matrix between food type amounts: ",file="bikemodel.txt",sep="\n",append=TRUE)
 cat("#for(ii in 1:nf){  ",file="bikemodel.txt",sep="\n",append=TRUE)
 cat("#for(jj in 1:nf){ ",file="bikemodel.txt",sep="\n",append=TRUE)
 cat("#CORlogs0[ii,jj] <- (Ss0[ii,jj])/((sqrt(Ss0[ii,ii]))*(sqrt(Ss0[jj,jj])))",file="bikemodel.txt",sep="\n",append=TRUE)
@@ -274,4 +274,5 @@ cat("for(i in 1:nf){for(j in 1:nf){ DI[i,j]<-equals(i,j) }}",file="bikemodel.txt
 
 cat("}",file="bikemodel.txt",sep="\n",append=TRUE)
 close(fileConn)
+
 
