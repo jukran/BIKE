@@ -41,7 +41,7 @@ nbelowLOQM[i,j] <- sum((cendataLOQ$Hazard==hazardnamesM[i])&(cendataLOQ$Type==fo
 nbelowLODM[i,j] <- sum((cendataLOD$Hazard==hazardnamesM[i])&(cendataLOD$Type==foodnames[j]))
 }}
 }
-frac <- 1/100 # absolute lower limit for any value is assumed as = frac*LOD 
+frac <- 1/100000 # absolute lower limit for any value is assumed as = frac*LOD 
 # exact log-concentrations and log-LOQ/LOD values for each hazard, each food, each measurement  
 if(nhK>0){
 logcK <- array(NA,dim=c(nhK,nf,max(nexactK)))  # for exact measurements
@@ -103,7 +103,6 @@ logLODLimM[i,j,1:nbelowLODM[i,j]] <- log(frac)+logLODM[i,j,1:nbelowLODM[i,j]]
 }
 }}}
 
-
 # CONSUMPTION DATA FORMATTING CODE
 
 nd <- length(grep(foodnames[1],colnames(consum))) # number of days reported
@@ -134,7 +133,7 @@ sw[is.na(s)] <- NA
 logs <- log(s)    # natural logarithms of serving size
 logsw <- log(sw)  # natural logarithms of serving size per weight
 
-# To be investigated, not used currently: 
+# Option to be investigated, not used currently: 
 # empirically based wishart prior based on observed data correlations between foods.
 # Substitute NAs with mean values, to calculate roughly food correlations from data:
 #getlogsw <- matrix(NA,nr*nd,nf)
