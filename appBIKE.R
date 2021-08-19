@@ -14,7 +14,7 @@ library(mvtnorm)
 library(shinyMatrix)
 
 # read data files:
-source("ReadData5.R")
+source("ReadData.R")
 raspberry <- rgb(208/255,0,111/255) # color definition
 burnin <- 1000  # number of burnin iterations for MCMC runs
 
@@ -51,7 +51,7 @@ ui <- fluidPage(
                     value=100),
         sliderInput("nU","Uncertainty sample size for Q%",
                     min=50,
-                    max=500,
+                    max=1000,
                     value=100),
       titlePanel("Processing factors:"),
                    matrixInput(
@@ -91,7 +91,7 @@ ui <- fluidPage(
 # Define server logic required to run BUGS model and draw results
 server <- function(input, output) {
   
-  source("FormatData5_0.R",local=TRUE) # read and format data
+  source("FormatData.R",local=TRUE) # read and format data
   
   # compute results from the full model once, then just use as 'current' results for all plots
   # when only post-processing of the MCMC output is needed.
@@ -103,13 +103,13 @@ server <- function(input, output) {
       if(input$modelchoice2 == "No"){ between.user.pvar <- 0 } 
       # model without user variability in consumption frequency
       if(input$modelchoice2 == "Yes"){ between.user.pvar <- 1 }
-      source("makebugscode5_0A.R",local=TRUE)     # write code for OpenBUGS
-      source("RunBUGSfunction5_0A.R",local=TRUE)  # run BUGS
+      source("makebugscodeA.R",local=TRUE)     # write code for OpenBUGS
+      source("RunBUGSfunctionA.R",local=TRUE)  # run BUGS
     } 
     # model assumes that consuming next day depends on consuming previous day 
     if(input$modelchoice == "Dependent days"){  
-      source("makebugscode5_0B.R",local=TRUE)     # write code for OpenBUGS
-      source("RunBUGSfunction5_0B.R",local=TRUE)  # run BUGS
+      source("makebugscodeB.R",local=TRUE)     # write code for OpenBUGS
+      source("RunBUGSfunctionB.R",local=TRUE)  # run BUGS
     }
     
     results(round(as.numeric(input$Iterations))) 
@@ -635,7 +635,8 @@ server <- function(input, output) {
 ###########################################################################   
    
    output$distPlot3 =  renderPlot({         
-     # generate results based on inputs from ui.R:  Exposures
+     # generate results based on inputs from ui.R:  
+     # Exposures
               
      currentresults()
      
@@ -813,8 +814,8 @@ server <- function(input, output) {
                concentrations <- concentrations[!is.na(concentrations)]
                concentrations0 <- concentrations0[!is.na(concentrations0)]
                
-               for(resample in 1:25){   
-                 # create 25 replicate ('bootstrap') data with original nsample:
+               for(resample in 1:20){   
+                 # create 20 replicate ('bootstrap') data with original nsample:
                  sampleOIM <- sample(OIM,length(OIM),replace=TRUE)
                  samplecon <- sample(concentrations,length(concentrations),replace=TRUE)
                  samplecon0 <- sample(concentrations0,length(concentrations0),replace=TRUE)
@@ -874,8 +875,8 @@ server <- function(input, output) {
                concentrations <- concentrations[!is.na(concentrations)]
                concentrations0 <- concentrations0[!is.na(concentrations0)]
                
-               for(resample in 1:25){
-                 # create 25 replicate ('bootstrap') data with original nsample:
+               for(resample in 1:20){
+                 # create 20 replicate ('bootstrap') data with original nsample:
                  sampleOIM <- sample(OIM,length(OIM),replace=TRUE)
                  samplecon <- sample(concentrations,length(concentrations),replace=TRUE)
                  samplecon0 <- sample(concentrations0,length(concentrations),replace=TRUE)
@@ -1046,8 +1047,8 @@ server <- function(input, output) {
              servings <- servings[!is.na(servings)]
              concentrations <- concentrations[!is.na(concentrations)]
              concentrations0 <- concentrations0[!is.na(concentrations0)]
-             for(resample in 1:25){
-               # create 25 replicate ('bootstrap') data with original nsample:
+             for(resample in 1:20){
+               # create 20 replicate ('bootstrap') data with original nsample:
                sampleser <- sample(servings,length(servings),replace=TRUE)
                samplecon <- sample(concentrations,length(concentrations),replace=TRUE)
                samplecon0 <- sample(concentrations0,length(concentrations0),replace=TRUE)
@@ -1108,8 +1109,8 @@ server <- function(input, output) {
                concentrations <- concentrations[!is.na(concentrations)]
                concentrations0 <- concentrations0[!is.na(concentrations0)]
                
-               for(resample in 1:25){
-               # create 25 replicate ('bootstrap') data with original nsample:   
+               for(resample in 1:20){
+               # create 20 replicate ('bootstrap') data with original nsample:   
                sampleser <- sample(servings,length(servings),replace=TRUE)
                samplecon <- sample(concentrations,length(concentrations),replace=TRUE)
                samplecon0 <- sample(concentrations0,length(concentrations0),replace=TRUE)
@@ -1454,13 +1455,13 @@ server <- function(input, output) {
                                 RM[foodindex[i],hazardindexM[h]]*
                                 cmc[v,hazardindexM[h],foodindex[i]]*wmc[v]
                  }
-               if(sum(Eemc[v,h,1:nfused])<=10000000){
+               if(sum(Eemc[v,h,1:nfused])<=100000){
                  Eetotmczeros[v,h] <- rpois(1,sum(Eemc[v,h,1:nfused]))}  # sum of all serving exposures, incl. zeros  
-               if(sum(Eemc[v,h,1:nfused])>10000000){
+               if(sum(Eemc[v,h,1:nfused])>100000){
                  Eetotmczeros[v,h] <- round(rnorm(1,sum(Eemc[v,h,1:nfused]),sqrt(sum(Eemc[v,h,1:nfused]))))}  # sum of all serving exposures, incl. zeros  
-               if(sum(Eemcconuse[v,h,1:nfused])<=10000000){
+               if(sum(Eemcconuse[v,h,1:nfused])<=100000){
                Eetotmc[v,h] <- rpois(1,sum(Eemcconuse[v,h,1:nfused]))} # simulated total acute exposure for individual when used and contaminated 
-               if(sum(Eemcconuse[v,h,1:nfused])>10000000){
+               if(sum(Eemcconuse[v,h,1:nfused])>100000){
                Eetotmc[v,h] <- round(rnorm(1,sum(Eemcconuse[v,h,1:nfused]),sqrt(sum(Eemcconuse[v,h,1:nfused]))))} # simulated total acute exposure for individual when used and contaminated    
              } # end of h
            } # end of v (variability) 
@@ -1568,13 +1569,13 @@ server <- function(input, output) {
                                RM[foodindex[i],hazardindexM[h]]*
                                cmc[v,hazardindexM[h],foodindex[i]]*wmc[v] 
                  }
-               if(sum(Eemc[v,h,1:nfused])<=10000000){
+               if(sum(Eemc[v,h,1:nfused])<=100000){
                  Eetotmczeros[v,h] <- rpois(1,sum(Eemc[v,h,1:nfused]))}  # sum of all serving exposures, incl. zeros 
-               if(sum(Eemc[v,h,1:nfused])>10000000){
+               if(sum(Eemc[v,h,1:nfused])>100000){
                  Eetotmczeros[v,h] <- rnorm(1,sum(Eemc[v,h,1:nfused]),sqrt(sum(Eemc[v,h,1:nfused])))}
-               if(sum(Eemcconuse[v,h,1:nfused])<=10000000){
+               if(sum(Eemcconuse[v,h,1:nfused])<=100000){
                  Eetotmc[v,h] <- rpois(1,sum(Eemcconuse[v,h,1:nfused]))} # simulated total acute exposure for individual when used and contaminated 
-               if(sum(Eemcconuse[v,h,1:nfused])>10000000){
+               if(sum(Eemcconuse[v,h,1:nfused])>100000){
                  Eetotmc[v,h] <- round(rnorm(1,sum(Eemcconuse[v,h,1:nfused]),sqrt(sum(Eemcconuse[v,h,1:nfused]))))} # simulated total acute exposure for individual when used and contaminated
              }  # end of h
            } # end of v (variability)  
@@ -1649,7 +1650,8 @@ server <- function(input, output) {
    ######################################################################
       
    output$distPlot5 <- renderPlot({      
-     # generate results based on inputs from ui.R:  MCMC diagnostic plots
+     # generate results based on inputs from ui.R:  
+     # MCMC diagnostic plots
      
      currentresults()
      
@@ -1685,7 +1687,7 @@ server <- function(input, output) {
        
        if((nhusedK>0)&(nfused>0)){
          # redefine dimensions if scalars
-         if((nhM==1)&(nf==1)){
+         if((nhK==1)&(nf==1)){
            mucK <- array(mucK,dim=c(input$Iterations-burnin,1,1))
            sigcK <- array(sigcK,dim=c(input$Iterations-burnin,1,1))
            pK <- array(pK,dim=c(input$Iterations-burnin,1,1))
@@ -1760,7 +1762,8 @@ server <- function(input, output) {
    ##################################################
    
    output$distPlot6 <- renderPlot({      
-     # generate results based on inputs from ui.R: Correlation plots for consumptions
+     # generate results based on inputs from ui.R: 
+     # Correlation plots for consumptions
      
      currentresults()
     
@@ -1805,7 +1808,8 @@ server <- function(input, output) {
    ################################################
    
    output$distPlot7 <- renderPlot({     
-     # generate results based on inputs from ui.R: Correlation plots for mean consumptions
+     # generate results based on inputs from ui.R: 
+     # Correlation plots for mean consumptions
      
      currentresults()
      
@@ -1847,7 +1851,8 @@ server <- function(input, output) {
    #######################################################################
    
    resultValues <- reactive({
-     # generate results based on inputs from ui.R: data frame containing posterior predictive summaries
+     # generate results based on inputs from ui.R: 
+     # create data frame containing posterior predictive summaries
      
      currentresults()
 
@@ -1903,7 +1908,7 @@ server <- function(input, output) {
          for(i in 1:nhusedK){
            for(j in 1:nfused){
              counterK <- counterK +1
-             hazardnamesusedKinfoodnamesused[counterK] <- paste(hazardnamesusedK[i],"in",foodnamesused[j],":") 
+             hazardnamesusedKinfoodnamesused[counterK] <- paste0(hazardnamesusedK[i]," in ",foodnamesused[j],":") 
              hlo98cK[counterK] <- quantile(cKmc[,i,j],c(0.01),names=FALSE) # calculate quantile
              hup98cK[counterK] <- quantile(cKmc[,i,j],c(0.99),names=FALSE) # calculate quantile
              hlo90cK[counterK] <- quantile(cKmc[,i,j],c(0.05),names=FALSE) # calculate quantile
@@ -1950,7 +1955,7 @@ server <- function(input, output) {
            for(i in 1:nhusedM){
              for(j in 1:nfused){
                counterM <- counterM +1
-               hazardnamesusedMinfoodnamesused[counterM] <- paste(hazardnamesusedM[i],"in",foodnamesused[j],":") 
+               hazardnamesusedMinfoodnamesused[counterM] <- paste0(hazardnamesusedM[i]," in ",foodnamesused[j],":") 
                hlo98cM[counterM] <- quantile(cMmc[,i,j],c(0.01),names=FALSE) # calculate quantile
                hup98cM[counterM] <- quantile(cMmc[,i,j],c(0.99),names=FALSE) # calculate quantile
                hlo90cM[counterM] <- quantile(cMmc[,i,j],c(0.05),names=FALSE) # calculate quantile
@@ -1988,6 +1993,7 @@ server <- function(input, output) {
          logitp0 <- matrix(logitp0,input$Iterations-burnin,1)
          }
          Ts <- array(Ts,dim=c(input$Iterations-burnin,1,1))
+         Ts0 <- array(Ts0,dim=c(input$Iterations-burnin,1,1))
        }   
      DF <- data.frame(Results="No food-hazard selected")
      
@@ -2085,10 +2091,10 @@ server <- function(input, output) {
      if(input$modelchoice == "Dependent days"){   
      for(mc in 1:(input$Iterations-burnin)){
        if(nf>1){ # many foods
-       musmc[mc,1:nf] <- rmvnorm(1,mus0[mc,1:nf],solve(Ts[mc,1:nf,1:nf])) # individual mean log amount
+       musmc[mc,1:nf] <- rmvnorm(1,mus0[mc,1:nf],solve(Ts0[mc,1:nf,1:nf])) # individual mean log amount
        }
        if(nf==1){ # only one food
-       musmc[mc,1] <- rnorm(1,mus0[mc,1],sqrt(1/Ts[mc,1,1])) # individual mean log amount   
+       musmc[mc,1] <- rnorm(1,mus0[mc,1],sqrt(1/Ts0[mc,1,1])) # individual mean log amount   
        }
        for(h in 1:nhusedK){
             for(i in 1:nfused){
@@ -2125,7 +2131,7 @@ server <- function(input, output) {
        logitpmc[mc,1:nf] <- logitp0[mc,1:nf]   
        }   
        pmc[mc,1:nf] <- exp(logitpmc[mc,1:nf])/(1+exp(logitpmc[mc,1:nf])) # individual use probability
-       musmc[mc,1:nf] <- rmvnorm(1,mus0[mc,1:nf],solve(Ts[mc,1:nf,1:nf])) # individual mean amount
+       musmc[mc,1:nf] <- rmvnorm(1,mus0[mc,1:nf],solve(Ts0[mc,1:nf,1:nf])) # individual mean amount
        } 
        if(nf==1){ # only one food
        if(input$modelchoice2=="Yes"){ # variability between users frequencies
@@ -2135,7 +2141,7 @@ server <- function(input, output) {
        logitpmc[mc,1] <- logitp0[mc,1]     
        }   
        pmc[mc,1] <- exp(logitpmc[mc,1])/(1+exp(logitpmc[mc,1])) # individual use probability
-       musmc[mc,1] <- rnorm(1,mus0[mc,1],sqrt(1/Ts[mc,1,1])) # individual mean amount  
+       musmc[mc,1] <- rnorm(1,mus0[mc,1],sqrt(1/Ts0[mc,1,1])) # individual mean amount  
        }
        wmc[mc] <- rlnorm(1,muw,sigw) # bodyweight for random individual
        Umc[mc,1:nf] <- rbinom(nf,rep(1,nf),pmc[mc,1:nf]) # actual random use
@@ -2166,10 +2172,10 @@ server <- function(input, output) {
        if(input$modelchoice == "Dependent days"){    
          for(mc in 1:(input$Iterations-burnin)){
            if(nf>1){ # many foods
-           musmc[mc,1:nf] <- rmvnorm(1,mus0[mc,1:nf],solve(Ts[mc,1:nf,1:nf])) # individual mean log amount
+           musmc[mc,1:nf] <- rmvnorm(1,mus0[mc,1:nf],solve(Ts0[mc,1:nf,1:nf])) # individual mean log amount
            }
            if(nf==1){ # only one food
-           musmc[mc,1] <- rnorm(1,mus0[mc,1],sqrt(1/Ts[mc,1,1])) # individual mean log amount
+           musmc[mc,1] <- rnorm(1,mus0[mc,1],sqrt(1/Ts0[mc,1,1])) # individual mean log amount
            }
            wmc[mc] <- rlnorm(1,muw,sigw) # bodyweight for random individual
            Umc[mc,1:nf] <- rbinom(nf,rep(1,nf),ppred[mc,1:nf]) # actual random use
@@ -2242,10 +2248,10 @@ server <- function(input, output) {
        fconsup98 <- numeric(nfused)
      for(mc in 1:(input$Iterations-burnin)){
        if(nf>1){ # many foods
-       musmc[mc,1:nf] <- rmvnorm(1,mus0[mc,1:nf],solve(Ts[mc,1:nf,1:nf]))
+       musmc[mc,1:nf] <- rmvnorm(1,mus0[mc,1:nf],solve(Ts0[mc,1:nf,1:nf]))
        }
        if(nf==1){ # only one food
-       musmc[mc,1] <- rnorm(1,mus0[mc,1],sqrt(1/Ts[mc,1,1]))   
+       musmc[mc,1] <- rnorm(1,mus0[mc,1],sqrt(1/Ts0[mc,1,1]))   
        }
      }
      for(i in 1:nfused){ # posterior predictive summaries (quantiles) of individual chronic consumptions (/bw and absolute)
@@ -2269,7 +2275,7 @@ server <- function(input, output) {
      # Compose data frame for chemical exposure
      if(nhusedK>0){
      DF1K <- data.frame(
-       Quantity = paste(hazardnamesusedK,"total chronic exposure /bw"),
+       Quantity = paste(hazardnamesusedK,"total chronic exposure/bw"),
        Q01 = as.character(round(hlo98totbwK[1:nhusedK],2)),
        Q05 = as.character(round(hlo90totbwK[1:nhusedK],2)),
        Q10 = as.character(round(hlo80totbwK[1:nhusedK],2)),
@@ -2296,7 +2302,7 @@ server <- function(input, output) {
      # Compose data frame for consumptions   
      if(is.element("Consumptions",theresults)){   
      DF4 <- data.frame(
-       Quantity = paste(foodnamesused,"mean daily use /bw"),
+       Quantity = paste(foodnamesused,"mean daily use/bw+"),
        Q01 = as.character(round(fconslo98bw[1:nfused],2)),
        Q05 = as.character(round(fconslo90bw[1:nfused],2)),
        Q10 = as.character(round(fconslo80bw[1:nfused],2)),
@@ -2306,7 +2312,7 @@ server <- function(input, output) {
        Q99 = as.character(round(fconsup98bw[1:nfused],2)),
        stringsAsFactors=FALSE)
      DF5 <- data.frame(
-       Quantity = paste(foodnamesused,"mean daily use"),
+       Quantity = paste(foodnamesused,"mean daily use+"),
        Q01 = as.character(round(fconslo98[1:nfused],2)),
        Q05 = as.character(round(fconslo90[1:nfused],2)),
        Q10 = as.character(round(fconslo80[1:nfused],2)),
@@ -2364,7 +2370,7 @@ server <- function(input, output) {
    headertext <- reactive({ 
      currentresults()
      theresults = input$selectresults
-     if(is.element("Posterior predictive",theresults)&(is.element("Concentrations",theresults)|is.element("Consumptions",theresults)|is.element("Exposures",theresults)) ){"Posterior predictive distribution summaries"}
+     if(is.element("Posterior predictive",theresults)&(is.element("Concentrations",theresults)|is.element("Consumptions",theresults)|is.element("Exposures",theresults)) ){"POSTERIOR PREDICTIVE DISTRIBUTION SUMMARIES"}
    })
   
    # Show the values using an HTML table
