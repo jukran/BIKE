@@ -1,6 +1,7 @@
 
 results <- function(iterations){
   # Run the BUGS model code (MCMC sampling of posterior distribution) for given number of iterations.
+  # This file runs the model version with dependent consumption days.
   # For this: data and initial values for parameters need to be defined,
   # and the names of parameters to be monitored in outputs.
   # --> definitions for 'data', 'inits', 'parameters'.
@@ -10,8 +11,11 @@ results <- function(iterations){
   
   # if both chemical and microbiological hazards:    
   if((nhK>0)&(nhM>0)){
-    data <- list("Weight","logcM","logcK","sdpriorlimM","sdpriorlimK","nexactM","nexactK",
-                 "nhM","nhK","nf","nr","nd","logsw","usedays")  
+    data <- list("Weight","logcM","logcK","nexactM","nexactK",
+                 "nhM","nhK","nf","nr","nd","logsw","usedays")
+    if(input$priorchoice == "sigma_uniform"){
+      data <- append(data,c("sdpriorlimM","sdpriorlimK")) # assign limits for prior range  
+    }
     if(sum(nbelowLOQM)>0){ 
       data <- append(data,c("logLOQM","logLOQLimM","nbelowLOQM"))
     }
@@ -45,8 +49,11 @@ results <- function(iterations){
   
   # if only chemical hazards:  
   if((nhK>0)&(nhM==0)){
-    data <- list("Weight","logcK","sdpriorlimK","nexactK",
-                 "nhK","nf","nr","nd","logsw","usedays")  
+    data <- list("Weight","logcK","nexactK",
+                 "nhK","nf","nr","nd","logsw","usedays")
+    if(input$priorchoice == "sigma_uniform"){
+      data <- append(data,"sdpriorlimK")  # assign limits for prior range 
+    }
     if(sum(nbelowLOQK)>0){ 
       data <- append(data,c("logLOQK","logLOQLimK","nbelowLOQK"))
     }
@@ -66,8 +73,11 @@ results <- function(iterations){
   
   # if only microbiological hazards:  
   if((nhK==0)&(nhM>0)){
-    data <- list("Weight","logcM","sdpriorlimM","nexactM",
+    data <- list("Weight","logcM","nexactM",
                  "nhM","nf","nr","nd","logsw","usedays") 
+    if(input$priorchoice == "sigma_uniform"){
+      data <- append(data,"sdpriorlimM") # assign limits for prior range  
+    }
     if(sum(nbelowLOQM)>0){ 
       data <- append(data,c("logLOQM","logLOQLimM","nbelowLOQM"))
     }
@@ -102,7 +112,7 @@ results <- function(iterations){
   }  # end of prior choice
   if(input$priorchoice == "tau_gamma"){ # then inits for tau are needed
     if((nhK>0)&(nhM>0)){
-      inits <- function(){list(muw=0,tauw=1,mucK=initmucK,taucK=initsigcK^(-2),mucM=initmucM,sigcM=initsigcM,pM=matrix(0.5,nhM,nf),mus=matrix(0,nr,nf),mus0=rep(0,nf)) }
+      inits <- function(){list(muw=0,tauw=1,mucK=initmucK,taucK=initsigcK^(-2),mucM=initmucM,taucM=initsigcM^(-2),pM=matrix(0.5,nhM,nf),mus=matrix(0,nr,nf),mus0=rep(0,nf)) }
       parameters=c("mucK","mucM","sigcK","sigcM","mus0","Ts0","Ts","sigs","Ss0","Ss","ppred","muw","sigw","pM","pK")
     }
     if((nhK>0)&(nhM==0)){
@@ -115,14 +125,7 @@ results <- function(iterations){
     }  
   }  # end of prior choice
   
-# if prevalence sample data is given, include it:   
-if(is.element("positives",OTK)){
-  data <- append(data,c("nposK","nsamK"))    
-}  
-if(is.element("positives",OTM)){
-  data <- append(data,c("nposM","nsamM"))    
-}
-    
+
 dasim = bugs(data,inits,model.file="bikemodel.txt",debug=FALSE,parameters,n.chains=1,n.burnin=burnin,n.iter=iterations,DIC=FALSE,codaPkg=FALSE)
 attach.bugs(dasim)
 
