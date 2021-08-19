@@ -1,5 +1,5 @@
 
-# Read names of foods and hazards 
+# Read the names of foods and hazards 
 ocdata <- read.table("DataOccurrence.txt",header=TRUE,dec=",",stringsAsFactors = FALSE)
 attach(ocdata)
 foodnames<-names(ocdata[3:dim(ocdata)[2]])
@@ -7,8 +7,8 @@ hazardnamesM<-hazardnames[hazardtypes=="M"]
 hazardnamesK<-hazardnames[hazardtypes=="K"]
 if(sum(hazardtypes=="M")>0){
   # Occurrence Table of Microbials consists of marks "all" or "positives" to denote data type:
-OTM<-matrix(NA,sum(hazardtypes=="M"),length(foodnames))  
-OTM[1:sum(hazardtypes=="M"),1:length(foodnames)]<-as.matrix(ocdata[hazardtypes=="M",3:length(ocdata[1,])])  
+  OTM<-matrix(NA,sum(hazardtypes=="M"),length(foodnames))  
+  OTM[1:sum(hazardtypes=="M"),1:length(foodnames)]<-as.matrix(ocdata[hazardtypes=="M",3:length(ocdata[1,])])  
 } 
 if(sum(hazardtypes=="K")>0){
   # Occurrence Table of Chemicals consists of marks "all" or "positives" to denote data type:
