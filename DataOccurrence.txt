@@ -2,7 +2,7 @@ hazardnames	hazardtypes 	broiler		milk		fish		egg		vege
 "lead"		"K"		"positives"	"positives"	"positives"	"positives"	"positives"
 "cadmium"	"K"		"positives"	"positives"	"positives"	"positives"	"positives"
 "salmonella"	"M"             "all"		"positives"	"positives"	"positives"	"positives"
-"campylobacter"	"M"		"positives"	"positives"		"all"		"positives"	"positives"
+"campylobacter"	"M"		"positives"	"positives"	"all"		"positives"	"positives"
 
 
 
